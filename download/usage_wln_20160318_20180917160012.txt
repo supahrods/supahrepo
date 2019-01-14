@@ -1,9 +1,0 @@
-------------------------- Detailed Summary Report ----------------------------------------------------------------
-20160317: usage_wln
-Total File Counts: 3
-Tallied File(s): 2
-DAT file without FIN: 1
-Missing File(s): 0
---------- List of DAT without FIN ----------------------------------
-9_233041_dwh_rater_usage_wln_extr_6_21196_20206_47083784108352_17-03-2016_02-50-25_91_41.dat
---------- List of Missing Files ----------------------------------

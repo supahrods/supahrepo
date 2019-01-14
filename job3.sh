@@ -17,3 +17,7 @@ for i in $(echo $S3_WLG_USAGE_ITEMS | tr " " "\n" | grep .*"\.dat"$); do
 		echo "$(echo $S3_WLG_USAGE_ITEMS | tr " " "\n" | grep $i) does not have any $(echo $S3_WLG_USAGE_ITEMS | tr " " "\n" | grep $i).FIN" >> $LOG_DIR/job3.log;
 	fi;
 done
+
+##Insert date in log
+echo $(date) >> $LOG_DIR/job3.log
+echo >> $LOG_DIR/job3.log

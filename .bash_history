@@ -1193,3 +1193,226 @@ ls
 ls
 aws s3 ls --recursive rods-sample
 exit
+ls
+vi job3.sh
+ls
+history | grep git
+git add --all .
+git commit -m "update before globe"
+git push origin master
+exit
+ls
+rm sample.*
+ls
+vi job4.sh
+ls
+vi job3.sh
+ls
+vi job4.sh
+exit
+ls
+vi job4.sh
+RECEIVE_DIR=/home/ubuntu/job3-4/receiving
+PROCESS_DIR=/home/ubuntu/job3-4/processingeod
+OUTPUT_DIR=/home/ubuntu/job3-4/output/eod_results
+S3_DAT=s3://rods-sample/dat/
+S3_FIN=s3://rods-sample/fin/
+S3_WLG_USAGE=s3://rods-sample/wlg_usage/
+S3_REPORT=s3://rods-sample/reports/
+VALIDATED_FILES=$((0))
+MISSING_FIX=$((0))
+MISSING_FILES=$((0))
+S3_DAT_ITEMS=$(aws s3 ls $S3_DAT 2> /dev/null | tr -s " " | cut -f4 -d" " | awk NF)
+S3_FIN_ITEMS=$(aws s3 ls $S3_FIN 2> /dev/null | tr -s " " | cut -f4 -d" " | awk NF)
+S3_WLG_USAGE_ITEMS=$(aws s3 ls $S3_WLG_USAGE 2> /dev/null | tr -s " " | cut -f4 -d" " | awk NF)
+vi job4.sh
+echo $S3_WLG_USAGE_ITEMS | tr " " "\n" | grep .*"\.txt"$
+vi job4.sh
+echo $S3_WLG_USAGE_ITEMS
+aws s3 --help
+aws s3 help
+vi job4.sh_v1 
+echo $S3_WLG_USAGE_ITEMS | tr " " "\n" | grep .*"\.txt"$
+cat $(echo $S3_WLG_USAGE_ITEMS | tr " " "\n" | grep .*"\.txt"$)
+ls
+vi job4.sh
+ls -R
+rm job3-4/output/eod_results/results.txt 
+ls -R
+ls
+vi job4.sh
+ls
+ls -R
+aws s3 ls --recursive rods-sample
+./job4.sh
+ls
+vi job4.sh
+ls -R
+cat job3-4/receiving/
+cat job3-4/receiving/DWH_RATER_USAGE_WLN_EXTR_SUMMARY_20160318.txt 
+cd
+clear
+./job4.sh
+ls
+vi job4/sh
+vi job4.sh
+./job4.sh
+ls
+rm job3.log 
+ls
+ls /tmp/urs_logs/
+rm /tmp/urs_logs/job3.log 
+ls
+vi job4.sh
+date
+man date
+date %T
+date "%T"
+date %T
+man date
+date +%T
+date +%F
+man date
+date +%F-%T
+date
+date +%F-%T
+date +%F_%T
+ls
+vi job4.sh
+ls
+vi job4.sh_v1 
+ls
+ls -R
+ls
+vi job4.sh
+man rm
+ls
+vi job4.sh
+ls -R
+rm job3-4/receiving/DWH_RATER_USAGE_WLN_EXTR_SUMMARY_20160318.txt 
+ls -R
+rm job3-4/output/eod_results/results.t3xt 
+ls -R
+ls
+cd download/
+ls
+cp * ~/job3-4/receiving/
+ls
+cd
+ls -R
+ls
+vi job3.sh_v1 
+ls /tmp/urs_logs/
+ls
+./job3.sh
+ls
+ls /tmp/urs_logs/
+ls -R
+./job3.sh_v1 
+ls -R
+vi /tmp/urs_logs/job3.log 
+ls
+vi job3.sh_v1 
+vi job3.sh
+vi job3.sh_v1 
+vi job3.sh
+ls
+ls -R
+rm job3-4/receiving/DWH_RATER_USAGE_WLN_EXTR_SUMMARY_20160318.txt 
+ls -R
+ls
+cd download/
+ls
+cp * ~/job3-4/receiving/
+ls
+cd
+ls
+rm /tmp/urs_logs/job3.log 
+ls -R
+./job3.sh_v1 
+ls
+vi /tmp/urs_logs/job3.log 
+ls
+ls -R
+vi job4.sh_v1 
+vi job3.sh_v1 
+vi job4.sh_v1 
+ls
+vi job4.sh
+vi job3.sh_v1 
+ls
+vi job4.sh_v1 
+vi job4.sh
+vi job4.sh_v1 
+ls -R
+./job4.sh
+ls -R
+aws s3 ls --recursive rods-sample
+ls
+ls -R
+ls
+cd download/
+ls
+aws s3 cp --recursive . s3://rods-sample/wlg_usage
+aws s3 ls --recursive rods-sample/wlg_usage
+ls
+cd
+ls
+ls -R
+rm /tmp/urs_logs/job3.log 
+ls
+history | grep .
+history
+history | less
+ls
+ls /tmp/urs_logs/
+aws s3 ls --recursive rods-sample
+./job3.sh
+vi /tmp/urs_logs/job3.log 
+aws s3 ls --recursive rods-sample
+./job4.sh
+ls
+ls /tmp/urs_logs/
+aws s3 ls --recursive rods-sample
+ls -R
+cd download/
+cp * ~/job3-4/receiving/
+ls
+cd
+rm /tmp/urs_logs/job3.log 
+ls
+./job3.sh_v1 
+./job4.sh_v1 
+ls -R
+cd /tmp/urs_logs/
+ls
+vi job3.log 
+history | grep git
+exit
+ls
+aws s3 ls rods-sample
+aws s3 ls --recursive rods-sample
+ls
+cd download/
+ls
+cat usage_wln_20160318_20180917160012.txt 
+ls
+rm usage_wln_20160318_20180917160012.txt 
+ls
+cd
+ls
+cd job3-4/
+ls
+cd output/
+ls
+cd eod_results/
+ls
+cd
+ls
+vi job4.sh
+ls
+touch sample.txt
+touch sample.2.txt
+ls | grep .*\.txt
+touch sample.t3xt
+ls

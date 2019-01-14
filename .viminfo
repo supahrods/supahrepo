@@ -8,7 +8,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/rm
+~MSle0~/OUTPUT
 
 # Command Line History (newest to oldest):
 :q
@@ -17,6 +17,7 @@
 :set nu
 
 # Search String History (newest to oldest):
+?/OUTPUT
 ?/S3
 ?/rm
 
@@ -30,60 +31,89 @@
 "0	CHAR	0
 	 
 ""1	LINE	0
-				#echo $i >> $OUTPUT_DIR/validated.txt;
+	
 "2	LINE	0
-			#echo $i >> $OUTPUT_DIR/missingfix.txt;
+	rm $FIN_DIR/* && echo "Cleaning $FIN_DIR complete." >> $LOG_DIR/job3.log
 "3	LINE	0
-			#echo $i >> $OUTPUT_DIR/missingfiles.txt;
+	rm -$DAT_DIR/* && echo "Cleaning $DAT_DIR complete." >> $LOG_DIR/job3.log
 "4	LINE	0
-	#cat $OUTPUT_DIR/validated.txt >> $OUTPUT_DIR/results.txt;
+	rm $USAGE_DIR/* && echo "Cleaning $USAGE_DIR complete." >> $LOG_DIR/job3.log
 "5	LINE	0
-	#cat $OUTPUT_DIR/missingfix.txt >> $OUTPUT_DIR/results.txt;
+	echo >> $LOG_DIR/job3.log
 "6	LINE	0
-	echo $LIST_VALIDATED | tr " " "\n" >> $OUTPUT_DIR/results.txt;
-	#cat $OUTPUT_DIR/validated.txt >> $OUTPUT_DIR/results.txt;
+	echo $(date) >> $LOG_DIR/job3.log
 "7	LINE	0
-	#cat $OUTPUT_DIR/missingfix.txt >> $OUTPUT_DIR/results.txt;
+	aws s3 cp $USAGE_DIR s3://rods-sample/wlg_usage --recursive >> $LOG_DIR/job3.log 2> /dev/null
 "8	LINE	0
-	#cat $OUTPUT_DIR/missingfiles.txt >> $OUTPUT_DIR/results.txt;
+	
 "9	LINE	0
-	PROCESS_DIR=aws s3 
+	aws s3 cp $FIN_DIR s3://rods-sample/fin --recursive >> $LOG_DIR/job3.log 2> /dev/null
 "-	CHAR	0
 	#
 
 # File marks:
-'0  1  0  ~/job3.sh
-'1  3  16  ~/job4.sh
-'2  1  10  ~/job3.sh_v1
-'3  1  0  ~/job3-4/processingeod/DWH_RATER_USAGE_WLN_EXTR_SUMMARY_20160318.txt
-'4  4  0  ~/job3-4/processingeod/DWH_RATER_USAGE_WLN_EXTR_SUMMARY_20160318.txt
-'5  18  0  ~/job4.sh
-'6  34  0  ~/job4.sh
-'7  1  0  ~/job3-4/output/eod_results/job4.sh
-'8  5  95  ~/job3-4/processingeod/DWH_RATER_USAGE_WLN_EXTR_SUMMARY_20160318.txt
-'9  1  0  /*.txt
+'0  1  0  /tmp/urs_logs/job3.log
+'1  3  0  /tmp/urs_logs/job3.log
+'2  55  0  ~/job4.sh_v1
+'3  59  0  ~/job4.sh_v1
+'4  53  0  ~/job4.sh
+'5  16  0  ~/job3.sh_v1
+'6  52  0  ~/job4.sh
+'7  58  0  ~/job4.sh_v1
+'8  46  0  ~/job3.sh_v1
+'9  8  0  ~/job4.sh_v1
 
 # Jumplist (newest first):
--'  1  0  ~/job3.sh
--'  3  16  ~/job4.sh
--'  39  0  ~/job4.sh
--'  40  0  ~/job4.sh
+-'  1  0  /tmp/urs_logs/job3.log
+-'  3  0  /tmp/urs_logs/job3.log
+-'  55  0  ~/job4.sh_v1
+-'  1  0  ~/job4.sh_v1
+-'  59  0  ~/job4.sh_v1
+-'  53  0  ~/job4.sh
 -'  1  0  ~/job4.sh
--'  1  10  ~/job3.sh_v1
+-'  16  0  ~/job3.sh_v1
+-'  1  0  ~/job3.sh_v1
+-'  52  0  ~/job4.sh
+-'  58  0  ~/job4.sh_v1
+-'  46  0  ~/job3.sh_v1
+-'  8  0  ~/job4.sh_v1
+-'  23  24  ~/job3.sh
+-'  1  0  ~/job3.sh
+-'  19  3  ~/job3.sh
+-'  45  32  ~/job3.sh_v1
+-'  2  0  ~/job3.sh_v1
+-'  14  0  /tmp/urs_logs/job3.log
+-'  32  1  ~/job4.sh
+-'  53  155  ~/job4.sh_v1
+-'  3  0  ~/job4.sh
+-'  36  146  ~/job4.sh
+-'  51  65  ~/job4.sh
+-'  1  0  job4/sh
+-'  4  48  ~/job4.sh
+-'  37  72  ~/job4.sh
+-'  8  0  ~/job4.sh
+-'  25  0  ~/job4.sh_v1
+-'  13  0  ~/job4.sh
+-'  18  0  ~/job4.sh
+-'  19  17  ~/job4.sh
+-'  18  0  ~/job3.sh
+-'  44  0  ~/job4.sh
+-'  35  151  ~/job4.sh
+-'  5  16  ~/job4.sh
+-'  42  0  ~/job4.sh
+-'  43  0  ~/job4.sh
 -'  1  0  ~/job3-4/processingeod/DWH_RATER_USAGE_WLN_EXTR_SUMMARY_20160318.txt
 -'  4  0  ~/job3-4/processingeod/DWH_RATER_USAGE_WLN_EXTR_SUMMARY_20160318.txt
--'  18  0  ~/job4.sh
--'  34  0  ~/job4.sh
+-'  21  0  ~/job4.sh
 -'  1  0  ~/job3-4/output/eod_results/job4.sh
 -'  5  95  ~/job3-4/processingeod/DWH_RATER_USAGE_WLN_EXTR_SUMMARY_20160318.txt
 -'  1  0  /*.txt
--'  2  0  ~/job4.sh
 -'  1  0  ~/job3-4/output/eod_results/validated.txt
 -'  1  0  ~/job3-4/output/eod_results/missingfix.txt
 -'  1  91  ~/job3-4/output/eod_results/missingfiles.txt
--'  51  0  ~/job4.sh
+-'  57  0  ~/job4.sh
 -'  1  0  ~/job3-4/output/eod_results/results.txt
--'  17  1  ~/job4.sh
+-'  20  1  ~/job4.sh
 -'  1  0  ~/home/job4.sh
 -'  1  0  ~/home/job4.s
 -'  129  0  ~/job3-4/output/eod_results/results.txt
@@ -92,32 +122,27 @@
 -'  1  0  ~/download/DWH_RATER_USAGE_WLN_EXTR_SUMMARY_20160318.txt
 -'  1  0  ~/download/usage_wln_20160318_20180917160012.txt
 -'  86  92  ~/job3-4/output/eod_results/results.txt
--'  41  36  ~/job4.sh
--'  24  33  ~/job4.sh
--'  28  30  ~/job4.sh
--'  11  0  ~/job4.sh
--'  27  10  ~/job4.sh
--'  32  0  ~/job4.sh
--'  48  7  ~/job4.sh
--'  29  0  ~/job4.sh
--'  10  0  ~/job4.sh
+-'  27  33  ~/job4.sh
+-'  31  30  ~/job4.sh
+-'  14  0  ~/job4.sh
+-'  30  10  ~/job4.sh
+-'  54  7  ~/job4.sh
 -'  37  0  ~/job3.sh_v1
--'  45  0  ~/job3.sh_v1
--'  12  0  ~/job4.sh
+-'  15  0  ~/job4.sh
 -'  1  0  ~/job3.log
--'  44  0  ~/job4.sh
--'  8  0  ~/job4.sh
--'  25  51  ~/job3.sh
--'  27  0  ~/job3.sh
--'  26  27  ~/job3.sh
+-'  47  0  ~/job4.sh
+-'  11  0  ~/job4.sh
+-'  29  51  ~/job3.sh
+-'  31  0  ~/job3.sh
+-'  30  27  ~/job3.sh
 -'  8  0  ~/job3.sh
 -'  21  0  ~/job3.log
 -'  5  91  ~/download/DWH_RATER_USAGE_WLN_EXTR_SUMMARY_20160318.txt
 -'  2  0  ~/download/usage_wln_20160318_20180917160012.txt
 -'  12  0  ~/job3.log
--'  51  0  ~/job3.sh
+-'  55  0  ~/job3.sh
 -'  1  0  ~/README.md
--'  52  15  ~/job3.sh
+-'  56  15  ~/job3.sh
 -'  1  0  ~/job3-4/receiving/usage_wln_20160318_20180917160012.txt
 -'  1  0  ~/job3-4/receiving/DWH_RATER_USAGE_WLN_EXTR_SUMMARY_20160318.txt
 -'  24  26  ~/.profile
@@ -136,41 +161,191 @@
 -'  1  0  ~/job3-4/job3.sh
 -'  24  26  ~/.profile
 -'  1  0  ~/.profile
--'  49  63  ~/job3-4/job4.sh
--'  1  0  ~/job3-4/job4.sh
--'  44  15  ~/job3-4/job3.sh
--'  1  0  ~/job3-4/job3.sh
--'  44  15  ~/job3-4/job3.sh
--'  1  0  ~/job3-4/job3.sh
--'  49  63  ~/job3-4/job4.sh
--'  1  0  ~/job3-4/job4.sh
--'  44  15  ~/job3-4/job3.sh
--'  1  0  ~/job3-4/job3.sh
--'  44  15  ~/job3-4/job3.sh
--'  1  0  ~/job3-4/job3.sh
--'  24  26  ~/.profile
--'  1  0  ~/.profile
--'  49  63  ~/job3-4/job4.sh
--'  1  0  ~/job3-4/job4.sh
--'  44  15  ~/job3-4/job3.sh
--'  1  0  ~/job3-4/job3.sh
--'  44  15  ~/job3-4/job3.sh
--'  1  0  ~/job3-4/job3.sh
--'  49  63  ~/job3-4/job4.sh
--'  1  0  ~/job3-4/job4.sh
--'  1  0  ~/download/DWH_RATER_USAGE_WLN_EXTR_SUMMARY_20160318.txt
--'  17  5  ~/job4.sh
--'  22  12  ~/job4.sh
 
 # History of marks within files (newest to oldest):
 
-> ~/job3.sh
+> /tmp/urs_logs/job3.log
 	"	1	0
-	^	12	60
-	.	13	59
-	+	20	0
-	+	20	3
-	+	20	62
+
+> ~/job4.sh_v1
+	"	55	0
+	^	59	18
+	.	59	0
+	+	30	0
+	+	34	0
+	+	37	0
+	+	49	0
+	+	51	0
+	+	53	0
+	+	3	0
+	+	41	153
+	+	42	60
+	+	43	71
+	+	44	69
+	+	45	67
+	+	46	92
+	+	47	96
+	+	48	50
+	+	49	98
+	+	50	46
+	+	51	98
+	+	52	48
+	+	53	157
+	+	61	0
+	+	56	36
+	+	9	35
+	+	56	68
+	+	57	0
+	+	57	0
+	+	61	0
+	+	59	3
+	+	60	13
+	+	59	0
+
+> ~/job4.sh
+	"	53	0
+	^	53	24
+	.	53	5
+	+	39	35
+	+	41	20
+	+	42	45
+	+	44	46
+	+	39	38
+	+	38	25
+	+	46	46
+	+	44	47
+	+	46	41
+	+	44	78
+	+	46	78
+	+	48	70
+	+	21	45
+	+	22	46
+	+	26	53
+	+	38	54
+	+	39	52
+	+	40	50
+	+	41	74
+	+	44	10
+	+	46	10
+	+	48	10
+	+	54	0
+	+	54	0
+	+	54	0
+	+	9	0
+	+	24	39
+	+	25	3
+	+	28	30
+	+	29	2
+	+	24	38
+	+	31	34
+	+	32	2
+	+	44	62
+	+	44	1
+	+	46	0
+	+	45	57
+	+	48	0
+	+	47	59
+	+	54	0
+	+	54	0
+	+	54	0
+	+	19	0
+	+	19	0
+	+	19	0
+	+	47	7
+	+	19	0
+	+	54	0
+	+	19	0
+	+	50	14
+	+	48	0
+	+	46	0
+	+	46	0
+	+	44	0
+	+	32	0
+	+	29	0
+	+	25	0
+	+	20	68
+	+	37	69
+	+	38	80
+	+	39	78
+	+	40	76
+	+	41	101
+	+	42	105
+	+	43	59
+	+	44	107
+	+	45	55
+	+	46	107
+	+	48	151
+	+	8	34
+	+	17	9
+	+	5	0
+	+	17	103
+	+	20	22
+	+	17	115
+	+	51	50
+	+	47	57
+	+	36	149
+	+	4	0
+	+	51	65
+	+	36	154
+	+	37	60
+	+	2	14
+	+	36	153
+	+	37	60
+	+	38	71
+	+	39	69
+	+	40	67
+	+	41	92
+	+	42	96
+	+	43	50
+	+	44	98
+	+	45	46
+	+	46	98
+	+	47	48
+	+	48	142
+	+	51	43
+	+	50	36
+	+	52	29
+	+	53	5
+	a	36	14
+
+> ~/job3.sh_v1
+	"	16	0
+	^	45	33
+	.	45	32
+	+	46	0
+	+	44	0
+	+	43	0
+	+	42	0
+	+	39	0
+	+	38	0
+	+	37	0
+	+	46	0
+	+	44	0
+	+	43	0
+	+	42	0
+	+	39	0
+	+	38	0
+	+	37	0
+	+	8	21
+	+	20	67
+	+	23	66
+	+	31	56
+	+	37	55
+	+	38	55
+	+	39	63
+	+	46	8
+	+	44	59
+	+	43	55
+	+	42	55
+	+	45	32
+
+> ~/job3.sh
+	"	23	24
+	^	23	25
+	.	23	0
+	+	24	0
+	+	24	3
+	+	24	62
 	+	10	12
 	+	7	95
 	+	10	0
@@ -190,21 +365,21 @@
 	+	15	102
 	+	17	133
 	+	18	0
-	+	20	0
-	+	20	0
-	+	20	0
-	+	20	0
-	+	20	0
-	+	20	0
-	+	20	0
-	+	20	50
-	+	20	52
-	+	20	59
-	+	20	0
+	+	24	0
+	+	24	0
+	+	24	0
+	+	24	0
+	+	24	0
+	+	24	0
+	+	24	0
+	+	24	50
+	+	24	52
+	+	24	59
+	+	24	0
 	+	10	0
 	+	10	0
 	+	10	0
-	+	20	0
+	+	24	0
 	+	10	0
 	+	10	0
 	+	10	0
@@ -213,173 +388,31 @@
 	+	12	59
 	+	13	52
 	+	12	56
-	+	20	52
+	+	24	52
 	+	15	117
 	+	8	18
 	+	14	139
 	+	17	146
-	+	20	100
+	+	24	100
 	+	10	46
 	+	11	12
 	+	10	52
 	+	11	43
-	+	20	0
-	+	20	0
-	+	20	0
+	+	24	0
+	+	24	0
+	+	24	0
 	+	12	57
 	+	13	59
+	+	23	0
+
+> job4/sh
+	"	1	0
 
 > ~/download/DWH_RATER_USAGE_WLN_EXTR_SUMMARY_20160318.txt
 	"	1	0
 	^	5	96
 	.	5	91
 	+	5	91
-
-> ~/job4.sh
-	"	17	5
-	^	17	6
-	.	16	68
-	+	40	0
-	+	40	0
-	+	42	0
-	+	42	0
-	+	44	0
-	+	44	0
-	+	44	0
-	+	32	7
-	+	34	7
-	+	35	7
-	+	36	5
-	+	38	7
-	+	40	6
-	+	42	7
-	+	44	7
-	+	15	0
-	+	15	5
-	+	15	31
-	+	15	33
-	+	34	36
-	+	47	1
-	+	47	2
-	+	47	1
-	+	47	0
-	+	47	0
-	+	47	0
-	+	18	37
-	+	22	33
-	+	17	36
-	+	34	35
-	+	35	33
-	+	36	33
-	+	38	40
-	+	32	152
-	+	33	53
-	+	34	34
-	+	35	33
-	+	36	35
-	+	35	30
-	+	34	34
-	+	37	101
-	+	33	35
-	+	35	35
-	+	37	20
-	+	38	45
-	+	40	46
-	+	35	38
-	+	34	25
-	+	42	46
-	+	40	47
-	+	42	41
-	+	40	78
-	+	42	78
-	+	44	70
-	+	17	45
-	+	18	46
-	+	22	53
-	+	34	54
-	+	35	52
-	+	36	50
-	+	37	74
-	+	40	10
-	+	42	10
-	+	44	10
-	+	47	0
-	+	47	0
-	+	47	0
-	+	8	0
-	+	20	39
-	+	21	3
-	+	24	30
-	+	25	2
-	+	20	38
-	+	27	34
-	+	28	2
-	+	40	62
-	+	40	1
-	+	42	0
-	+	41	57
-	+	44	0
-	+	43	59
-	+	47	0
-	+	47	0
-	+	47	0
-	+	15	0
-	+	15	0
-	+	15	0
-	+	43	7
-	+	15	0
-	+	47	0
-	+	15	0
-	+	46	14
-	+	44	0
-	+	42	0
-	+	42	0
-	+	40	0
-	+	28	0
-	+	25	0
-	+	21	0
-	+	16	68
-	a	32	14
-
-> ~/job3.sh_v1
-	"	1	10
-	^	1	11
-	.	42	55
-	+	45	0
-	+	44	0
-	+	43	0
-	+	42	0
-	+	39	0
-	+	38	0
-	+	37	0
-	+	45	0
-	+	44	0
-	+	43	0
-	+	42	0
-	+	39	0
-	+	38	0
-	+	37	0
-	+	8	21
-	+	20	67
-	+	23	66
-	+	31	56
-	+	37	55
-	+	38	55
-	+	39	63
-	+	45	8
-	+	44	59
-	+	43	55
-	+	42	55
-
-> ~/job4.sh_v1
-	"	24	0
-	.	51	0
-	+	28	0
-	+	32	0
-	+	35	0
-	+	47	0
-	+	49	0
-	+	51	0
 
 > ~/job3-4/output/eod_results/results.txt
 	"	7	0
@@ -418,9 +451,6 @@
 
 > ~/job3.log
 	"	1	0
-
-> /tmp/urs_logs/job3.log
-	"	3	0
 
 > ~/README.md
 	"	1	0

@@ -42,4 +42,5 @@ aws s3 cp $USAGE_DIR s3://rods-sample/wlg_usage --recursive >> $LOG_DIR/job3.log
 rm $DAT_DIR/* && echo "Cleaning $DAT_DIR complete." >> $LOG_DIR/job3.log
 rm $FIN_DIR/* && echo "Cleaning $FIN_DIR complete." >> $LOG_DIR/job3.log
 rm $USAGE_DIR/* && echo "Cleaning $USAGE_DIR complete." >> $LOG_DIR/job3.log
+echo $(date) >> $LOG_DIR/job3.log
 echo >> $LOG_DIR/job3.log
