@@ -1,44 +1,19 @@
 #!/bin/bash
-RECEIVE_DIR=/home/ubuntu/job3-4/receiving
-PROCESS_DIR=/home/ubuntu/job3-4/processing
-OUTPUT_DIR=/home/ubuntu/job3-4/output
-DAT_DIR=/home/ubuntu/job3-4/output/dat
-FIN_DIR=/home/ubuntu/job3-4/output/fin
-USAGE_DIR=/home/ubuntu/job3-4/output/wlg_usage
+S3_DAT=s3://rods-sample/dat/
+S3_FIN=s3://rods-sample/fin/
+S3_WLG_USAGE=s3://rods-sample/wlg_usage/
+S3_DAT_ITEMS=$(aws s3 ls $S3_DAT 2> /dev/null | tr -s " " | cut -f4 -d" " | awk NF)
+S3_FIN_ITEMS=$(aws s3 ls $S3_FIN 2> /dev/null | tr -s " " | cut -f4 -d" " | awk NF)
+S3_WLG_USAGE_ITEMS=$(aws s3 ls $S3_WLG_USAGE 2> /dev/null | tr -s " " | cut -f4 -d" " | awk NF)
+LOG_DIR=/tmp/urs_logs
 
-## Check if uploading then move from receiving to processing
-for i in $(ls $RECEIVE_DIR | grep .*"\.dat".*$); do
-	if ! lsof | grep $RECEIVE_DIR/$i; then
-		mv $RECEIVE_DIR/$i $PROCESS_DIR;
-	fi;
-done
-
-## Process files then move to output directory
-for i in $(ls $PROCESS_DIR | grep .*"\.dat"$); do
-	if [ -f $PROCESS_DIR/$i.FIN ]; then
-		echo "$PROCESS_DIR/$i.FIN exists for $PROCESS_DIR/$i" >> job3.log;
-		mv $PROCESS_DIR/$i $DAT_DIR && mv $PROCESS_DIR/$i.FIN $FIN_DIR;
+## Process files then move to fin and dat directories
+## Irrelevent files will retain in wlg_usage
+for i in $(echo $S3_WLG_USAGE_ITEMS | tr " " "\n" | grep .*"\.dat"$); do
+	if echo $S3_WLG_USAGE_ITEMS | tr " " "\n" | grep -q $i.FIN; then
+		echo "$(echo $S3_WLG_USAGE_ITEMS | tr " " "\n" | grep $i.FIN) exists for $(echo $S3_WLG_USAGE_ITEMS | tr " " "\n" | grep $i)" >> $LOG_DIR/job3.log;
+		aws s3 mv --quiet $S3_WLG_USAGE$i $S3_DAT 2> /dev/null && aws s3 mv --quiet $S3_WLG_USAGE$i.FIN $S3_FIN 2> /dev/null;
 	else
-		echo "$PROCESS_DIR/$i does not have any $PROCESS_DIR/$i.FIN" >> job3.log;
-		mv $PROCESS_DIR/$i $USAGE_DIR;
+		echo "$(echo $S3_WLG_USAGE_ITEMS | tr " " "\n" | grep $i) does not have any $(echo $S3_WLG_USAGE_ITEMS | tr " " "\n" | grep $i).FIN" >> $LOG_DIR/job3.log;
 	fi;
 done
-
-## Process .dat.FIN files that do not have any .dat
-for i in $(ls $PROCESS_DIR | grep .*"\.dat\.FIN"$); do
-	if [ -f $PROCESS_DIR/$i ]; then
-		echo "$PROCESS_DIR/$i does not have any .dat file" >> job3.log;
-		mv $PROCESS_DIR/$i $USAGE_DIR;
-	fi;
-done
-
-## Upload output to S3
-aws s3 cp $DAT_DIR s3://rods-sample/dat --recursive >> job3.log 2> /dev/null
-aws s3 cp $FIN_DIR s3://rods-sample/fin --recursive >> job3.log 2> /dev/null
-aws s3 cp $USAGE_DIR s3://rods-sample/wlg_usage --recursive >> job3.log 2> /dev/null
-
-## Clean up output directory
-rm $DAT_DIR/* && echo "Cleaning $DAT_DIR complete." >> job3.log
-rm $FIN_DIR/* && echo "Cleaning $FIN_DIR complete." >> job3.log
-rm $USAGE_DIR/* && echo "Cleaning $USAGE_DIR complete." >> job3.log
-echo >> job3.log

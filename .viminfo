@@ -21,24 +21,67 @@
 # Input Line History (newest to oldest):
 
 # Registers:
+"1	LINE	0
+	
+"2	LINE	0
+	done
+"3	LINE	0
+		fi;
+"4	LINE	0
+			echo "$(echo $S3_WLG_USAGE_ITEMS | tr " " "\n" | grep $i) does not have any .dat file" >> $LOG_DIR/job3.log;
+"5	LINE	0
+		if echo $S3_WLG_USAGE_ITEMS | tr " " "\n" | grep -q $i; then
+"6	LINE	0
+	for i in $(echo $S3_WLG_USAGE_ITEMS | tr " " "\n" | grep .*"\.dat\.FIN"$); do
+"7	LINE	0
+	## Process .dat.FIN files that do not have any .dat
+"8	LINE	0
+	
+"9	LINE	0
+	#echo >> job3.log
 ""-	CHAR	0
-	;
+	 
 
 # File marks:
-'0  12  0  ~/job3.log
-'1  1  0  ~/job3.sh
-'2  44  15  ~/job3.sh
-'3  1  0  ~/job3-4/receiving/usage_wln_20160318_20180917160012.txt
-'4  1  0  ~/job3-4/receiving/DWH_RATER_USAGE_WLN_EXTR_SUMMARY_20160318.txt
-'5  24  26  ~/.profile
-'6  49  63  ~/job3-4/job4.sh
-'7  44  15  ~/job3-4/job3.sh
+'0  3  0  /tmp/urs_logs/job3.log
+'1  17  103  ~/job3.sh
+'2  12  59  ~/job3.sh
+'3  1  0  ~/job3.sh
+'4  11  0  ~/job3.sh
+'5  4  45  /tmp/urs_logs/job3.log
+'6  14  0  ~/job3.sh
+'7  1  17  /tmp/urs_logs/job3.log
+'8  19  0  ~/job3.sh
+'9  20  100  ~/job3.sh
 
 # Jumplist (newest first):
--'  12  0  ~/job3.log
--'  1  0  ~/job3.log
+-'  3  0  /tmp/urs_logs/job3.log
+-'  1  0  /tmp/urs_logs/job3.log
+-'  17  103  ~/job3.sh
 -'  1  0  ~/job3.sh
--'  44  15  ~/job3.sh
+-'  12  59  ~/job3.sh
+-'  11  0  ~/job3.sh
+-'  4  45  /tmp/urs_logs/job3.log
+-'  14  0  ~/job3.sh
+-'  19  0  ~/job3.sh
+-'  20  100  ~/job3.sh
+-'  1  14  ~/job3.log
+-'  16  4  ~/job3.sh
+-'  5  100  ~/job3.log
+-'  2  0  ~/job3.log
+-'  10  0  ~/job3.sh
+-'  15  64  ~/job3.sh
+-'  25  0  ~/job4.sh
+-'  1  0  ~/job4.sh
+-'  13  27  ~/job3.sh
+-'  9  0  ~/job3.sh
+-'  21  0  ~/job3.log
+-'  5  91  ~/download/DWH_RATER_USAGE_WLN_EXTR_SUMMARY_20160318.txt
+-'  1  0  ~/download/DWH_RATER_USAGE_WLN_EXTR_SUMMARY_20160318.txt
+-'  2  0  ~/download/usage_wln_20160318_20180917160012.txt
+-'  1  0  ~/download/usage_wln_20160318_20180917160012.txt
+-'  12  0  ~/job3.log
+-'  1  0  ~/README.md
 -'  1  0  ~/job3-4/receiving/usage_wln_20160318_20180917160012.txt
 -'  1  0  ~/job3-4/receiving/DWH_RATER_USAGE_WLN_EXTR_SUMMARY_20160318.txt
 -'  24  26  ~/.profile
@@ -110,43 +153,94 @@
 -'  1  0  ~/job3-4/job4.sh
 -'  44  15  ~/job3-4/job3.sh
 -'  1  0  ~/job3-4/job3.sh
--'  44  15  ~/job3-4/job3.sh
--'  1  0  ~/job3-4/job3.sh
--'  24  26  ~/.profile
--'  1  0  ~/.profile
--'  49  63  ~/job3-4/job4.sh
--'  1  0  ~/job3-4/job4.sh
--'  44  15  ~/job3-4/job3.sh
--'  1  0  ~/job3-4/job3.sh
--'  44  15  ~/job3-4/job3.sh
--'  1  0  ~/job3-4/job3.sh
--'  49  63  ~/job3-4/job4.sh
--'  1  0  ~/job3-4/job4.sh
--'  44  15  ~/job3-4/job3.sh
--'  1  0  ~/job3-4/job3.sh
--'  44  15  ~/job3-4/job3.sh
--'  1  0  ~/job3-4/job3.sh
--'  24  26  ~/.profile
--'  1  0  ~/.profile
--'  49  63  ~/job3-4/job4.sh
--'  1  0  ~/job3-4/job4.sh
--'  44  15  ~/job3-4/job3.sh
--'  1  0  ~/job3-4/job3.sh
--'  1  0  ~/job3.sh
--'  44  15  ~/job3.sh
 
 # History of marks within files (newest to oldest):
 
-> ~/job3.log
-	"	12	0
+> /tmp/urs_logs/job3.log
+	"	3	0
 
 > ~/job3.sh
+	"	17	103
+	^	12	60
+	.	13	59
+	+	20	0
+	+	20	3
+	+	20	62
+	+	10	12
+	+	7	95
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	5
+	+	10	61
+	+	12	14
+	+	13	28
+	+	12	48
+	+	13	56
+	+	14	126
+	+	14	7
+	+	14	126
+	+	15	102
+	+	17	133
+	+	18	0
+	+	20	0
+	+	20	0
+	+	20	0
+	+	20	0
+	+	20	0
+	+	20	0
+	+	20	0
+	+	20	50
+	+	20	52
+	+	20	59
+	+	20	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	20	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	17	128
+	+	15	95
+	+	12	59
+	+	13	52
+	+	12	56
+	+	20	52
+	+	15	117
+	+	8	18
+	+	14	139
+	+	17	146
+	+	20	100
+	+	10	46
+	+	11	12
+	+	10	52
+	+	11	43
+	+	20	0
+	+	20	0
+	+	20	0
+	+	12	57
+	+	13	59
+
+> ~/job3.log
+	"	1	14
+
+> ~/job4.sh
+	"	25	0
+
+> ~/download/DWH_RATER_USAGE_WLN_EXTR_SUMMARY_20160318.txt
+	"	5	91
+	^	5	96
+	.	5	91
+	+	5	91
+
+> ~/download/usage_wln_20160318_20180917160012.txt
+	"	2	0
+
+> ~/README.md
 	"	1	0
-	^	42	63
-	.	41	62
-	+	33	0
-	+	32	3
-	+	41	62
 
 > ~/job3-4/receiving/usage_wln_20160318_20180917160012.txt
 	"	1	0
