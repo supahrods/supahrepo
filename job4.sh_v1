@@ -12,8 +12,15 @@ S3_DAT_ITEMS=$(aws s3 ls $S3_DAT 2> /dev/null | tr -s " " | cut -f4 -d" " | awk 
 S3_FIN_ITEMS=$(aws s3 ls $S3_FIN 2> /dev/null | tr -s " " | cut -f4 -d" " | awk NF)
 S3_WLG_USAGE_ITEMS=$(aws s3 ls $S3_WLG_USAGE 2> /dev/null | tr -s " " | cut -f4 -d" " | awk NF)
 
+## Check if uploading then move from receiving to processing
+for i in $(ls $RECEIVE_DIR | grep .*"\.txt"$); do
+	if ! lsof | grep $RECEIVE_DIR/$i; then
+  		mv $RECEIVE_DIR/$i $PROCESS_DIR;
+ 	fi;
+done
+
 ## Process eod
-for i in $(echo $S3_WLG_USAGE_ITEMS | tr " " "\n" | grep .*"\.txt"$); do
+for i in $(cat $PROCESS_DIR/*.txt | grep .*\.dat); do
 	if echo $S3_DAT_ITEMS | tr " " "\n" | grep -qo $i; then
 		if echo $S3_FIN_ITEMS | tr " " "\n" | grep -qo $i; then
 			VALIDATED_FILES=$(($VALIDATED_FILES+1));
@@ -42,5 +49,3 @@ echo $LIST_WOFIN | tr " " "\n" >> $OUTPUT_DIR/results.txt;
 echo -e "\n--------- List of Missing File(s) ------------------------------------" >> $OUTPUT_DIR/results.txt;
 echo $LIST_MISSING | tr " " "\n" >> $OUTPUT_DIR/results.txt;
 echo -e "\n------------------------- End of Summary Report ------------------------------------------------------------------" >> $OUTPUT_DIR/results.txt;
-
-## Upload to S3
