@@ -13,8 +13,11 @@
 # Command Line History (newest to oldest):
 :q
 :wq
-:w
+:set nonu
+:set no nu
 :set nu
+:q!
+:w
 
 # Search String History (newest to oldest):
 ?/OUTPUT
@@ -31,39 +34,66 @@
 "0	CHAR	0
 	 
 ""1	LINE	0
-	
+			grep $LONG
 "2	LINE	0
-	rm $FIN_DIR/* && echo "Cleaning $FIN_DIR complete." >> $LOG_DIR/job3.log
+			echo $i >> $LONG_CALL_DIR/long_call.txt;
 "3	LINE	0
-	rm -$DAT_DIR/* && echo "Cleaning $DAT_DIR complete." >> $LOG_DIR/job3.log
+	602
+<WLNGTS_ATS_GTS_20181009104631_00010101.dat,9350,,,,,false,69,,INVITE,0,hc5gtsats01.vims.globe.com.ph,o0c2h5yy2z92j4zjy3j3ojx4z91c5295@UAC,tel:+63423223228,tel:09156107805,1810091015342B0800,1810091015412B0800,,1810091015412B0800,1810091045412B0800,null,vims.globe.com.ph,,128774515,1,3,null,1,1,1,616763662D2D32303138313030393130313533342D313030363034393737,null,,,null,m=audio 12176 RTP/AVP 8 97  ,a=rtpmap:8 PCMA/8000  a=rtpmap:97 telephone-event/8000  a=ptime:30  a=fmtp:97 0-15  ,,,,,1800,,,tel:09156107805,null,,,,2,null,,,,0,4,TEL_URI,2,0,,-1,0,0,0,0,null,0,null,,,,,,,,,0,,0,,tel:+63423223228
 "4	LINE	0
-	rm $USAGE_DIR/* && echo "Cleaning $USAGE_DIR complete." >> $LOG_DIR/job3.log
+	602
+<WLNGTS_ATS_GTS_20181009104631_00010101.dat,9350,,,,,false,69,,INVITE,0,hc5gtsats01.vims.globe.com.ph,o0c2h5yy2z92j4zjy3j3ojx4z91c5295@UAC,tel:+63423223228,tel:09156107805,1810091015342B0800,1810091015412B0800,,1810091015412B0800,1810091045412B0800,null,vims.globe.com.ph,,128774515,1,3,null,0,2,1,616763662D2D32303138313030393130313533342D313030363034393737,null,,,null,m=audio 12176 RTP/AVP 8 97  ,a=rtpmap:8 PCMA/8000  a=rtpmap:97 telephone-event/8000  a=ptime:30  a=fmtp:97 0-15  ,,,,,1800,,,tel:09156107805,null,,,,2,null,,,,0,4,TEL_URI,2,0,,-1,0,0,0,0,null,0,null,,,,,,,,,0,,0,,tel:+63423223228
 "5	LINE	0
-	echo >> $LOG_DIR/job3.log
+	602
+<WLNGTS_ATS_GTS_20181009104631_00010101.dat,9350,,,,,false,69,,INVITE,0,hc5gtsats01.vims.globe.com.ph,o0c2h5yy2z92j4zjy3j3ojx4z91c5295@UAC,tel:+63423223228,tel:09156107805,1810091015342B0800,1810091015412B0800,,1810091015412B0800,1810091045412B0800,null,vims.globe.com.ph,,128774515,1,3,null,1,1,0,616763662D2D32303138313030393130313533342D313030363034393737,null,,,null,m=audio 12176 RTP/AVP 8 97  ,a=rtpmap:8 PCMA/8000  a=rtpmap:97 telephone-event/8000  a=ptime:30  a=fmtp:97 0-15  ,,,,,1800,,,tel:09156107805,null,,,,2,null,,,,0,4,TEL_URI,2,0,,-1,0,0,0,0,null,0,null,,,,,,,,,0,,0,,tel:+63423223228
 "6	LINE	0
-	echo $(date) >> $LOG_DIR/job3.log
+	602
+<WLNGTS_ATS_GTS_20181009104631_00010101.dat,9350,,,,,false,69,,INVITE,0,hc5gtsats01.vims.globe.com.ph,o0c2h5yy2z92j4zjy3j3ojx4z91c5295@UAC,tel:+63423223228,tel:09156107805,1810091015342B0800,1810091015412B0800,,1810091015412B0800,1810091045412B0800,null,vims.globe.com.ph,,128774515,1,3,null,1,1,1,616763662D2D32303138313030393130313533342D313030363034393737,null,,,null,m=audio 12176 RTP/AVP 8 97  ,a=rtpmap:8 PCMA/8000  a=rtpmap:97 telephone-event/8000  a=ptime:30  a=fmtp:97 0-15  ,,,,,1800,,,tel:09156107805,null,,,,2,null,,,,0,4,TEL_URI,2,0,,-1,0,0,0,0,null,0,null,,,,,,,,,0,,0,,tel:+63423223228
 "7	LINE	0
-	aws s3 cp $USAGE_DIR s3://rods-sample/wlg_usage --recursive >> $LOG_DIR/job3.log 2> /dev/null
-"8	LINE	0
 	
+"8	LINE	0
+		fi;
 "9	LINE	0
-	aws s3 cp $FIN_DIR s3://rods-sample/fin --recursive >> $LOG_DIR/job3.log 2> /dev/null
+			fi;
 "-	CHAR	0
-	#
+	/
 
 # File marks:
-'0  1  0  /tmp/urs_logs/job3.log
-'1  3  0  /tmp/urs_logs/job3.log
-'2  55  0  ~/job4.sh_v1
-'3  59  0  ~/job4.sh_v1
-'4  53  0  ~/job4.sh
-'5  16  0  ~/job3.sh_v1
-'6  52  0  ~/job4.sh
-'7  58  0  ~/job4.sh_v1
-'8  46  0  ~/job3.sh_v1
-'9  8  0  ~/job4.sh_v1
+'0  1  286  ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_5.ftr
+'1  17  35  ~/job1.sh
+'2  18  39  ~/job1.sh
+'3  1  0  ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_4.ftr
+'4  19  44  ~/job1.sh
+'5  2  297  ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_4.ftr
+'6  4  295  ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_0.ftr
+'7  20  11  ~/job1.sh
+'8  12  4  ~/job1.sh
+'9  1  0  ~/job1.sh
 
 # Jumplist (newest first):
+-'  1  286  ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_5.ftr
+-'  17  35  ~/job1.sh
+-'  1  0  ~/job1.sh
+-'  18  39  ~/job1.sh
+-'  1  0  ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_4.ftr
+-'  19  44  ~/job1.sh
+-'  2  297  ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_4.ftr
+-'  4  295  ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_0.ftr
+-'  1  0  ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_0.ftr
+-'  20  11  ~/job1.sh
+-'  12  4  ~/job1.sh
+-'  1  0  ~/job3.sh
+-'  21  0  ~/job1.sh
+-'  1  307  ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_3.ftr
+-'  1  336  ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr
+-'  1  303  ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_2.ftr
+-'  1  0  ~/job1-2/success
+-'  10  5  ~/job1.sh
+-'  9  28  ~/job1.sh
+-'  4  0  ~/job1.sh
+-'  22  3  ~/job1.sh
+-'  8  33  ~/job1.sh
+-'  1  0  ~/job1-2/receiving/~job1.sh
 -'  1  0  /tmp/urs_logs/job3.log
 -'  3  0  /tmp/urs_logs/job3.log
 -'  55  0  ~/job4.sh_v1
@@ -78,7 +108,6 @@
 -'  46  0  ~/job3.sh_v1
 -'  8  0  ~/job4.sh_v1
 -'  23  24  ~/job3.sh
--'  1  0  ~/job3.sh
 -'  19  3  ~/job3.sh
 -'  45  32  ~/job3.sh_v1
 -'  2  0  ~/job3.sh_v1
@@ -139,30 +168,157 @@
 -'  21  0  ~/job3.log
 -'  5  91  ~/download/DWH_RATER_USAGE_WLN_EXTR_SUMMARY_20160318.txt
 -'  2  0  ~/download/usage_wln_20160318_20180917160012.txt
--'  12  0  ~/job3.log
--'  55  0  ~/job3.sh
--'  1  0  ~/README.md
--'  56  15  ~/job3.sh
--'  1  0  ~/job3-4/receiving/usage_wln_20160318_20180917160012.txt
--'  1  0  ~/job3-4/receiving/DWH_RATER_USAGE_WLN_EXTR_SUMMARY_20160318.txt
--'  24  26  ~/.profile
--'  1  0  ~/.profile
--'  49  63  ~/job3-4/job4.sh
--'  1  0  ~/job3-4/job4.sh
--'  44  15  ~/job3-4/job3.sh
--'  1  0  ~/job3-4/job3.sh
--'  44  15  ~/job3-4/job3.sh
--'  1  0  ~/job3-4/job3.sh
--'  49  63  ~/job3-4/job4.sh
--'  1  0  ~/job3-4/job4.sh
--'  44  15  ~/job3-4/job3.sh
--'  1  0  ~/job3-4/job3.sh
--'  44  15  ~/job3-4/job3.sh
--'  1  0  ~/job3-4/job3.sh
--'  24  26  ~/.profile
--'  1  0  ~/.profile
 
 # History of marks within files (newest to oldest):
+
+> ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_5.ftr
+	"	1	286
+	.	2	297
+	+	1	0
+	+	1	297
+	+	2	297
+
+> ~/job1.sh
+	"	17	35
+	^	17	36
+	.	17	34
+	+	1	11
+	+	8	8
+	+	2	40
+	+	8	34
+	+	22	0
+	+	8	37
+	+	22	32
+	+	22	54
+	+	22	13
+	+	3	38
+	+	22	3
+	+	8	37
+	+	9	53
+	+	10	34
+	+	12	3
+	+	22	0
+	+	9	28
+	+	10	5
+	+	7	46
+	+	20	0
+	+	7	60
+	+	20	4
+	+	5	44
+	+	20	0
+	+	19	44
+	+	18	39
+	+	17	34
+
+> ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_4.ftr
+	"	1	0
+	.	2	297
+	+	3	0
+	+	1	297
+	+	2	297
+
+> ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_0.ftr
+	"	4	295
+	^	4	296
+	.	4	295
+	+	1	295
+	+	5	581
+	+	5	0
+	+	1	295
+	+	4	581
+	+	2	293
+	+	3	291
+	+	4	295
+
+> ~/job3.sh
+	"	1	0
+	^	23	25
+	.	23	0
+	+	24	0
+	+	24	3
+	+	24	62
+	+	10	12
+	+	7	95
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	10	5
+	+	10	61
+	+	12	14
+	+	13	28
+	+	12	48
+	+	13	56
+	+	14	126
+	+	14	7
+	+	14	126
+	+	15	102
+	+	17	133
+	+	18	0
+	+	24	0
+	+	24	0
+	+	24	0
+	+	24	0
+	+	24	0
+	+	24	0
+	+	24	0
+	+	24	50
+	+	24	52
+	+	24	59
+	+	24	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	24	0
+	+	10	0
+	+	10	0
+	+	10	0
+	+	17	128
+	+	15	95
+	+	12	59
+	+	13	52
+	+	12	56
+	+	24	52
+	+	15	117
+	+	8	18
+	+	14	139
+	+	17	146
+	+	24	100
+	+	10	46
+	+	11	12
+	+	10	52
+	+	11	43
+	+	24	0
+	+	24	0
+	+	24	0
+	+	12	57
+	+	13	59
+	+	23	0
+
+> ~/.job3.sh.swp
+	"	1	0
+
+> ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_3.ftr
+	"	1	307
+	.	1	307
+	+	1	307
+
+> ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr
+	"	1	336
+	.	1	336
+	+	1	336
+
+> ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_2.ftr
+	"	1	303
+	.	1	303
+	+	1	303
+
+> ~/job1-2/success
+	"	1	0
+
+> ~/job1-2/receiving/~job1.sh
+	"	1	0
 
 > /tmp/urs_logs/job3.log
 	"	1	0
@@ -338,72 +494,6 @@
 	+	43	55
 	+	42	55
 	+	45	32
-
-> ~/job3.sh
-	"	23	24
-	^	23	25
-	.	23	0
-	+	24	0
-	+	24	3
-	+	24	62
-	+	10	12
-	+	7	95
-	+	10	0
-	+	10	0
-	+	10	0
-	+	10	0
-	+	10	0
-	+	10	5
-	+	10	61
-	+	12	14
-	+	13	28
-	+	12	48
-	+	13	56
-	+	14	126
-	+	14	7
-	+	14	126
-	+	15	102
-	+	17	133
-	+	18	0
-	+	24	0
-	+	24	0
-	+	24	0
-	+	24	0
-	+	24	0
-	+	24	0
-	+	24	0
-	+	24	50
-	+	24	52
-	+	24	59
-	+	24	0
-	+	10	0
-	+	10	0
-	+	10	0
-	+	24	0
-	+	10	0
-	+	10	0
-	+	10	0
-	+	17	128
-	+	15	95
-	+	12	59
-	+	13	52
-	+	12	56
-	+	24	52
-	+	15	117
-	+	8	18
-	+	14	139
-	+	17	146
-	+	24	100
-	+	10	46
-	+	11	12
-	+	10	52
-	+	11	43
-	+	24	0
-	+	24	0
-	+	24	0
-	+	12	57
-	+	13	59
-	+	23	0
 
 > job4/sh
 	"	1	0
