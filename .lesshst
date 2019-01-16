@@ -3,4 +3,6 @@
 "recursiveq
 "-e
 "quiet
+"-q
+"-r
 .shell

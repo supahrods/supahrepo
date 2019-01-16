@@ -1546,3 +1546,335 @@ ls
 mv job1-2/success/* job1-2/receiving/
 ls
 vi job1.sh 
+ls
+vi job1.sh 
+ll -trh
+ps -ef | grep vi
+vi job3.sh
+ls
+ls -a
+vi .job3.sh.swp 
+kill 14515 14863
+ps -ef | grep vi
+ls
+vi job3.sh
+vi job1.sh 
+ls -a
+rm .job1.sh.swp 
+vi job1.sh 
+ls -R
+./job1.sh 
+ls -R
+mv job1-2/success/* job1-2/receiving
+ls -R
+ls
+vi job1.sh 
+ls
+vi job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_0.ftr 
+ls
+cd job1-2/receiving/
+ls
+cp FILTER_WLNATS_AGF_16000040_000000478_20190108232204_0.ftr FILTER_WLNATS_AGF_16000040_000000478_20190108232204_4.ftr 
+cp FILTER_WLNATS_AGF_16000040_000000478_20190108232204_0.ftr FILTER_WLNATS_AGF_16000040_000000478_20190108232204_5.ftr 
+vi FILTER_WLNATS_AGF_16000040_000000478_20190108232204_4.ftr 
+vi FILTER_WLNATS_AGF_16000040_000000478_20190108232204_5.ftr
+man sort
+ls
+vi FILTER_WLNATS_AGF_16000040_000000478_20190108232204_5.ftr 
+ls
+vi ~/job1.sh 
+ls
+vi FILTER_WLNATS_AGF_16000040_000000478_20190108232204_4.ftr 
+grep 716763662D2D32303138313030393130313533342D313030363034393737
+grep 716763662D2D32303138313030393130313533342D313030363034393737 *
+grep 716763662D2D32303138313030393130313533342D313030363034393737 * | uniq
+man uniq
+grep 716763662D2D32303138313030393130313533342D313030363034393737 * | cut -f1 -d: | uniq
+vi ~/job1.sh 
+grep 716763662D2D32303138313030393130313533342D313030363034393737 *
+vi ~/job1.sh 
+grep 716763662D2D32303138313030393130313533342D313030363034393737 * | wc -l
+vi ~/job1.sh 
+vi FILTER_WLNATS_AGF_16000040_000000478_20190108232204_5.ftr 
+cd
+ls
+git add .
+git commit -m "jan 15 2019"
+git push
+exit
+ls
+vi job1.sh 
+ls
+cd job1-2/
+ls
+cd receiving/
+ls
+vi FILTER_WLNATS_AGF_16000040_000000478_20190108232204_4.ftr 
+vi FILTER_WLNATS_AGF_16000040_000000478_20190108232204_0.ftr 
+rm FILTER_WLNATS_AGF_16000040_000000478_20190108232204_0.ftr 
+vi FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr 
+rm FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr 
+ls
+vi FILTER_WLNATS_AGF_16000040_000000478_20190108232204_2.ftr 
+rm FILTER_WLNATS_AGF_16000040_000000478_20190108232204_2.ftr 
+vi FILTER_WLNATS_AGF_16000040_000000478_20190108232204_3.ftr 
+rm FILTER_WLNATS_AGF_16000040_000000478_20190108232204_3.ftr 
+ls
+vi FILTER_WLNATS_AGF_16000040_000000478_20190108232204_4.ftr 
+rm FILTER_WLNATS_AGF_16000040_000000478_20190108232204_5.ftr 
+ls
+vi FILTER_WLNATS_AGF_16000040_000000478_20190108232204_4.ftr
+ls
+l
+ls
+vi ~/job1.sh 
+RECEIVE_DIR=/home/ubuntu/job1-2/receiving
+SUCCESS_DIR=/home/ubuntu/job1-2/success
+LONG_CALL_HOLDER=0
+LONG_CALL_DIR=/home/ubuntu/job1-2/long_calls
+vi ~/job1.sh 
+ls $RECEIVE_DIR/*.ftr
+vi ~/job1.sh 
+cat /home/ubuntu/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_4.ftr | cut -f28-30 -d,
+vi FILTER_WLNATS_AGF_16000040_000000478_20190108232204_4.ftr 
+cat /home/ubuntu/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_4.ftr | cu
+cat /home/ubuntu/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_4.ftr | cut -f28-30 -d,
+ls
+vi ~/job1.sh 
+cat FILTER_WLNATS_AGF_16000040_000000478_20190108232204_4.ftr 
+head -n1 FILTER_WLNATS_AGF_16000040_000000478_20190108232204_4.ftr 
+clear
+man head
+head -n1 FILTER_WLNATS_AGF_16000040_000000478_20190108232204_4.ftr 
+ls
+vi ~/job1.sh 
+mkdir -p /home/ubuntu/job1-2/processing
+vi ~/job1.sh 
+ls
+vi job1.sh 
+ls
+vi job1.sh 
+ps -ef | grep vi
+kill 16671
+vi job1.sh 
+mkdir -p /home/ubuntu/job1-2/case1
+mkdir -p /home/ubuntu/job1-2/case2
+mkdir -p /home/ubuntu/job1-2/case3
+mkdir -p /home/ubuntu/job1-2/case4
+mkdir -p /home/ubuntu/job1-2/possible_success
+vi job1.sh 
+while yes; do echo
+while yes; do echo done
+while yes; do echo; done
+clear
+ls
+vi job1.sh 
+ls
+cd job1-2/
+ls
+cd rei
+cd receiving/
+ls
+vi FILTER_WLNATS_AGF_16000040_000000478_20190108232204_4.ftr 
+ps -ef | grep vi
+kil 17061
+kill 17061
+vi FILTER_WLNATS_AGF_16000040_000000478_20190108232204_4.ftr 
+cp FILTER_WLNATS_AGF_16000040_000000478_20190108232204_4.ftr FILTER_WLNATS_AGF_16000040_000000478_20190108232204_5.ftr 
+vi FILTER_WLNATS_AGF_16000040_000000478_20190108232204_
+vi FILTER_WLNATS_AGF_16000040_000000478_20190108232204_4.ftr 
+vi FILTER_WLNATS_AGF_16000040_000000478_20190108232204_5.ftr 
+vi FILTER_WLNATS_AGF_16000040_000000478_20190108232204_4.ftr 
+ls
+vi FILTER_WLNATS_AGF_16000040_000000478_20190108232204_5.ftr 
+vi FILTER_WLNATS_AGF_16000040_000000478_20190108232204_4.ftr 
+vi FILTER_WLNATS_AGF_16000040_000000478_20190108232204_5.ftr 
+vi FILTER_WLNATS_AGF_16000040_000000478_20190108232204_4.ftr 
+vi FILTER_WLNATS_AGF_16000040_000000478_20190108232204_5.ftr 
+cp FILTER_WLNATS_AGF_16000040_000000478_20190108232204_5.ftr FILTER_WLNATS_AGF_16000040_000000478_20190108232204_6.ftr 
+vi FILTER_WLNATS_AGF_16000040_000000478_20190108232204_6.ftr 
+cd
+./job1.sh 
+vi job1.sh 
+echo $i
+vi job1.sh 
+ls $RECEIVE_DIR/*ftr
+ls $RECEIVE_DIR/
+echo $RECEIVE_DIR
+ls
+vi job1.sh 
+RECEIVE_DIR=/home/ubuntu/job1-2/receiving
+CASE1_DIR=/home/ubuntu/job1-2/case1
+CASE2_DIR=/home/ubuntu/job1-2/case2
+CASE3_DIR=/home/ubuntu/job1-2/case3
+CASE4_DIR=/home/ubuntu/job1-2/case4
+POSSIBLE_SUCCES=/home/ubuntu/job1-2/possible_success
+SUCCESS_DIR=/home/ubuntu/job1-2/success
+LONG_CALL_HOLDER=0
+LONG_CALL_DIR=/home/ubuntu/job1-2/long_calls
+vi job1.sh 
+ls $RECEIVE_DIR/*ftr
+ls
+vi job1.log 
+ls
+rm job1.log 
+ls
+cd job1-2/
+ls
+cd receiving/
+ls
+cd ..
+ls
+ls -R
+mv case1/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_4.ftr receiving/
+mv case3/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_5.ftr receiving/
+ls
+rm -r processing/
+ls
+cd receiving/
+ls
+vi FILTER_WLNATS_AGF_16000040_000000478_20190108232204_4.ftr 
+mv FILTER_WLNATS_AGF_16000040_000000478_20190108232204_4.ftr FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr
+vi FILTER_WLNATS_AGF_16000040_000000478_20190108232204_5.ftr 
+mv FILTER_WLNATS_AGF_16000040_000000478_20190108232204_5.ftr FILTER_WLNATS_AGF_16000040_000000478_20190108232204_3.ftr
+mv FILTER_WLNATS_AGF_16000040_000000478_20190108232204_6.ftr FILTER_WLNATS_AGF_16000040_000000478_20190108232204_4.ftr
+ll -trh
+vi FILTER_WLNATS_AGF_16000040_000000478_20190108232204_4.ftr 
+vi FILTER_WLNATS_AGF_16000040_000000478_20190108232204_3.ftr 
+cd
+ls
+./job1.sh 
+ls -R job1-2/
+vi job1.sh 
+wc -l job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_4.ftr 
+vi job1.sh 
+ls
+rm job1.log 
+mv job1-2/case1/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr job1-2/receiving/
+mv job1-2/case3/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_3.ftr job1-2/receiving/
+ls -R job1-2
+ls
+./job1.sh 
+ls
+vi job1.log 
+ls
+vi job1.sh 
+man grep
+vi job1.sh 
+ls
+ls -R job1-2
+mv job1-2/case*/* job1-2/receiving/
+ls -R job1-2
+ls
+rm job1.log 
+./job1.sh 
+ls
+vi job1.log 
+vi job1.sh 
+grep -q $(head -n1 $i | cut -f31 -d,) $CASE2_DIR
+vi job1.sh 
+RECEIVE_DIR=/home/ubuntu/job1-2/receiving
+CASE1_DIR=/home/ubuntu/job1-2/case1
+CASE2_DIR=/home/ubuntu/job1-2/case2
+CASE3_DIR=/home/ubuntu/job1-2/case3
+CASE4_DIR=/home/ubuntu/job1-2/case4
+POSSIBLE_SUCCES=/home/ubuntu/job1-2/possible_success
+SUCCESS_DIR=/home/ubuntu/job1-2/success
+LONG_CALL_HOLDER=0
+LONG_CALL_DIR=/home/ubuntu/job1-2/long_calls
+vi job1.sh 
+ls $RECEIVE_DIR/*ftr
+ls -R job1-2
+mv job1-2/case*/* job1-2/receiving/
+ls -R job1-2
+ls $RECEIVE_DIR/*ftr
+vi job1.sh 
+grep -q $(head -n1 /home/ubuntu/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr | cut -f31 -d,) $CASE4_DIR
+head -n1 /home/ubuntu/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr | cut -f31 -d,
+grep -q $(head -n1 /home/ubuntu/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr | cut -f31 -d,) $CASE4_DIR
+man grep
+grep -q $(head -n1 /home/ubuntu/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr | cut -f31 -d,) $CASE4_DIR/*
+grep -rq $(head -n1 /home/ubuntu/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr | cut -f31 -d,) $CASE4_DIR
+man grep
+vi job1.sh 
+ls
+vi job1.log 
+ls
+vi job1.log 
+ls
+vi job1.sh 
+ls
+mv job1-2/case*/* job1-2/receiving/
+ls -R job1-2
+cd job1-2/receiving/
+ls
+cp FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr FILTER_WLNATS_AGF_16000040_000000478_20190108232204_2.ftr
+ls
+vi FILTER_WLNATS_AGF_16000040_000000478_20190108232204_2.ftr 
+ls
+cd
+ls
+vi job1.sh 
+./job1.sh 
+ls
+vi job1.log 
+ls -R job1-2
+ls
+vi job1.log 
+ls
+vi job1.sh 
+ls
+cd job1-2/
+ls
+cd case1/
+ls
+ls -l
+man ls
+man stat
+ls
+stat FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr 
+stat FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr  | grep Modif
+stat FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr  | grep Modify
+stat FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr  | grep "Modify: "
+stat FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr  | grep "Modify: " | cut -f2 -d" "
+stat FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr  | grep "Modify: " | cut -f2-3 -d" "
+ls
+cd
+ls
+vi job1.sh
+stat FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr  | grep "Modify: " | cut -f2-3 -d" "
+stat job1-2/case1/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr  | grep "Modify: " | cut -f2-3 -d" "
+((stat job1-2/case1/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr  | grep "Modify: " | cut -f2-3 -d" " + 7))
+stat job1-2/case1/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr  | grep "Modify: " | cut -f2-3 -d" "
+stat -c job1-2/case1/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr
+man stat
+stat -c %Y job1-2/case1/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr
+man stat
+vi job1.sh 
+mkdir -p /home/ubuntu/job1-2/tstamp
+ls -R job1-2
+mv job1-2/case*/* job1-2/receiving/
+ls
+rm job1.log 
+./job1.sh 
+ls
+ls -R job1-2
+vi job1-2/tstamp/timestamps.txt 
+ls
+vi job1.sh 
+mv job1-2/case*/* job1-2/receiving/
+ls -R job1-2
+rm job1.log
+./job1.sh 
+vi job1-2/tstamp/timestamps.txt 
+ls
+$((1548223525-1547618725))
+echo $((1548223525-1547618725))
+ls
+rm job1-2/tstamp/timestamps.txt 
+ls
+vi job1.log 
+ls
+rm job1.log 
+ls
+vi job1.sh 

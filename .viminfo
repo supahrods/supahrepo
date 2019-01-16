@@ -8,18 +8,20 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/OUTPUT
+~MSle0~/POSS
 
 # Command Line History (newest to oldest):
 :q
 :wq
+:w
+:wq!
+:set nu
 :set nonu
 :set no nu
-:set nu
 :q!
-:w
 
 # Search String History (newest to oldest):
+?/POSS
 ?/OUTPUT
 ?/S3
 ?/rm
@@ -34,65 +36,97 @@
 "0	CHAR	0
 	 
 ""1	LINE	0
-			grep $LONG
+		FILE_TPLUS7=(($FILE_TIMESTAMP+604800));
 "2	LINE	0
-			echo $i >> $LONG_CALL_DIR/long_call.txt;
+		FILE_TIMESTAMP=$(stat -c %Y $i);
 "3	LINE	0
-	602
-<WLNGTS_ATS_GTS_20181009104631_00010101.dat,9350,,,,,false,69,,INVITE,0,hc5gtsats01.vims.globe.com.ph,o0c2h5yy2z92j4zjy3j3ojx4z91c5295@UAC,tel:+63423223228,tel:09156107805,1810091015342B0800,1810091015412B0800,,1810091015412B0800,1810091045412B0800,null,vims.globe.com.ph,,128774515,1,3,null,1,1,1,616763662D2D32303138313030393130313533342D313030363034393737,null,,,null,m=audio 12176 RTP/AVP 8 97  ,a=rtpmap:8 PCMA/8000  a=rtpmap:97 telephone-event/8000  a=ptime:30  a=fmtp:97 0-15  ,,,,,1800,,,tel:09156107805,null,,,,2,null,,,,0,4,TEL_URI,2,0,,-1,0,0,0,0,null,0,null,,,,,,,,,0,,0,,tel:+63423223228
+	for i in $(ls $CASE1_DIR/*ftr); do
 "4	LINE	0
-	602
-<WLNGTS_ATS_GTS_20181009104631_00010101.dat,9350,,,,,false,69,,INVITE,0,hc5gtsats01.vims.globe.com.ph,o0c2h5yy2z92j4zjy3j3ojx4z91c5295@UAC,tel:+63423223228,tel:09156107805,1810091015342B0800,1810091015412B0800,,1810091015412B0800,1810091045412B0800,null,vims.globe.com.ph,,128774515,1,3,null,0,2,1,616763662D2D32303138313030393130313533342D313030363034393737,null,,,null,m=audio 12176 RTP/AVP 8 97  ,a=rtpmap:8 PCMA/8000  a=rtpmap:97 telephone-event/8000  a=ptime:30  a=fmtp:97 0-15  ,,,,,1800,,,tel:09156107805,null,,,,2,null,,,,0,4,TEL_URI,2,0,,-1,0,0,0,0,null,0,null,,,,,,,,,0,,0,,tel:+63423223228
+	599
+<WLNGTS_ATS_GTS_20181009104631_00010101.dat,9350,,,,,false,69,,INVITE,0,hc5gtsats01.vims.globe.com.ph,o0c2h5yy2z92j4zjy3j3ojx4z91c5295@UAC,tel:+63423223228,tel:09156107805,1810091015342B0800,1810091015412B0800,,1810091015412B0800,1810091045412B0800,null,vims.globe.com.ph,,128774515,1,3,2,1,1,1,726763662D2D32303138313030393130313533342D313030363034393737,null,,,null,m=audio 12176 RTP/AVP 8 97  ,a=rtpmap:8 PCMA/8000  a=rtpmap:97 telephone-event/8000  a=ptime:30  a=fmtp:97 0-15  ,,,,,1800,,,tel:09156107805,null,,,,2,null,,,,0,4,TEL_URI,2,0,,-1,0,0,0,0,null,0,null,,,,,,,,,0,,0,,tel:+63423223228
 "5	LINE	0
-	602
-<WLNGTS_ATS_GTS_20181009104631_00010101.dat,9350,,,,,false,69,,INVITE,0,hc5gtsats01.vims.globe.com.ph,o0c2h5yy2z92j4zjy3j3ojx4z91c5295@UAC,tel:+63423223228,tel:09156107805,1810091015342B0800,1810091015412B0800,,1810091015412B0800,1810091045412B0800,null,vims.globe.com.ph,,128774515,1,3,null,1,1,0,616763662D2D32303138313030393130313533342D313030363034393737,null,,,null,m=audio 12176 RTP/AVP 8 97  ,a=rtpmap:8 PCMA/8000  a=rtpmap:97 telephone-event/8000  a=ptime:30  a=fmtp:97 0-15  ,,,,,1800,,,tel:09156107805,null,,,,2,null,,,,0,4,TEL_URI,2,0,,-1,0,0,0,0,null,0,null,,,,,,,,,0,,0,,tel:+63423223228
+	599
+<WLNGTS_ATS_GTS_20181009104631_00010101.dat,9350,,,,,false,69,,INVITE,0,hc5gtsats01.vims.globe.com.ph,o0c2h5yy2z92j4zjy3j3ojx4z91c5295@UAC,tel:+63423223228,tel:09156107805,1810091015342B0800,1810091015412B0800,,1810091015412B0800,1810091045412B0800,null,vims.globe.com.ph,,128774515,1,3,4,1,1,0,726763662D2D32303138313030393130313533342D313030363034393737,null,,,null,m=audio 12176 RTP/AVP 8 97  ,a=rtpmap:8 PCMA/8000  a=rtpmap:97 telephone-event/8000  a=ptime:30  a=fmtp:97 0-15  ,,,,,1800,,,tel:09156107805,null,,,,2,null,,,,0,4,TEL_URI,2,0,,-1,0,0,0,0,null,0,null,,,,,,,,,0,,0,,tel:+63423223228
 "6	LINE	0
-	602
-<WLNGTS_ATS_GTS_20181009104631_00010101.dat,9350,,,,,false,69,,INVITE,0,hc5gtsats01.vims.globe.com.ph,o0c2h5yy2z92j4zjy3j3ojx4z91c5295@UAC,tel:+63423223228,tel:09156107805,1810091015342B0800,1810091015412B0800,,1810091015412B0800,1810091045412B0800,null,vims.globe.com.ph,,128774515,1,3,null,1,1,1,616763662D2D32303138313030393130313533342D313030363034393737,null,,,null,m=audio 12176 RTP/AVP 8 97  ,a=rtpmap:8 PCMA/8000  a=rtpmap:97 telephone-event/8000  a=ptime:30  a=fmtp:97 0-15  ,,,,,1800,,,tel:09156107805,null,,,,2,null,,,,0,4,TEL_URI,2,0,,-1,0,0,0,0,null,0,null,,,,,,,,,0,,0,,tel:+63423223228
+		if [ $(head -n1 $i | cut -f28-30 -d,) == "0,2,1" ]; then
 "7	LINE	0
-	
+	for i in $(ls $RECEIVE_DIR/*ftr); do
 "8	LINE	0
-		fi;
+	## Segregate cases 1, 2, and 3
 "9	LINE	0
-			fi;
+	## Check file timestamp. If it checks up to 7 days, move to processing directory
 "-	CHAR	0
-	/
+	l
 
 # File marks:
-'0  1  286  ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_5.ftr
-'1  17  35  ~/job1.sh
-'2  18  39  ~/job1.sh
-'3  1  0  ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_4.ftr
-'4  19  44  ~/job1.sh
-'5  2  297  ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_4.ftr
-'6  4  295  ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_0.ftr
-'7  20  11  ~/job1.sh
-'8  12  4  ~/job1.sh
-'9  1  0  ~/job1.sh
+'0  76  0  ~/job1.sh
+'1  66  16  ~/job1.sh
+'2  63  81  ~/job1.sh
+'3  67  2  ~/job1.sh
+'4  3  35  ~/job1.sh
+'5  64  21  ~/job1.sh
+'6  1  0  ~/job1-2/tstamp/timestamps.txt
+'7  1  0  ~/job1.log
+'8  3  103  ~/job1-2/tstamp/timestamps.txt
+'9  23  27  ~/job1.sh
 
 # Jumplist (newest first):
--'  1  286  ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_5.ftr
--'  17  35  ~/job1.sh
+-'  76  0  ~/job1.sh
 -'  1  0  ~/job1.sh
--'  18  39  ~/job1.sh
--'  1  0  ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_4.ftr
--'  19  44  ~/job1.sh
--'  2  297  ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_4.ftr
--'  4  295  ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_0.ftr
+-'  66  16  ~/job1.sh
+-'  63  81  ~/job1.sh
+-'  67  2  ~/job1.sh
+-'  9  0  ~/job1.sh
+-'  53  10  ~/job1.sh
+-'  44  11  ~/job1.sh
+-'  36  11  ~/job1.sh
+-'  28  11  ~/job1.sh
+-'  3  35  ~/job1.sh
+-'  27  0  ~/job1.sh
+-'  64  21  ~/job1.sh
+-'  1  0  ~/job1-2/tstamp/timestamps.txt
+-'  1  0  ~/job1.log
+-'  3  103  ~/job1-2/tstamp/timestamps.txt
+-'  23  27  ~/job1.sh
+-'  69  1  ~/job1.sh
+-'  58  0  ~/job1.sh
+-'  3  292  ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_2.ftr
+-'  1  0  ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_2.ftr
+-'  13  0  ~/job1.sh
+-'  19  0  ~/job1.sh
+-'  50  39  ~/job1.sh
+-'  5  18  ~/job1.sh
+-'  26  13  ~/job1.sh
+-'  25  22  ~/job1.sh
+-'  1  256  ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_3.ftr
+-'  1  63  ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_4.ftr
+-'  1  0  ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_5.ftr
+-'  24  0  ~/job1.sh
+-'  1  297  ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_6.ftr
+-'  3  291  ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_4.ftr
+-'  3  292  ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_5.ftr
+-'  1  0  ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_
+-'  31  11  ~/job1.sh
+-'  33  51  ~/job1.sh
+-'  15  0  ~/job1.sh
+-'  16  0  ~/job1.sh
+-'  17  0  ~/job1.sh
+-'  18  0  ~/job1.sh
+-'  8  0  ~/job1.sh
+-'  21  79  ~/job1.sh
+-'  10  41  ~/job1.sh
+-'  74  32  ~/job1.sh
+-'  1  0  ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr
 -'  1  0  ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_0.ftr
--'  20  11  ~/job1.sh
--'  12  4  ~/job1.sh
+-'  75  39  ~/job1.sh
+-'  4  297  ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_4.ftr
+-'  4  295  ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_0.ftr
+-'  77  11  ~/job1.sh
 -'  1  0  ~/job3.sh
--'  21  0  ~/job1.sh
--'  1  307  ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_3.ftr
--'  1  336  ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr
--'  1  303  ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_2.ftr
+-'  78  0  ~/job1.sh
 -'  1  0  ~/job1-2/success
--'  10  5  ~/job1.sh
--'  9  28  ~/job1.sh
--'  4  0  ~/job1.sh
--'  22  3  ~/job1.sh
--'  8  33  ~/job1.sh
+-'  11  0  ~/job1.sh
+-'  79  3  ~/job1.sh
 -'  1  0  ~/job1-2/receiving/~job1.sh
 -'  1  0  /tmp/urs_logs/job3.log
 -'  3  0  /tmp/urs_logs/job3.log
@@ -133,92 +167,180 @@
 -'  43  0  ~/job4.sh
 -'  1  0  ~/job3-4/processingeod/DWH_RATER_USAGE_WLN_EXTR_SUMMARY_20160318.txt
 -'  4  0  ~/job3-4/processingeod/DWH_RATER_USAGE_WLN_EXTR_SUMMARY_20160318.txt
--'  21  0  ~/job4.sh
--'  1  0  ~/job3-4/output/eod_results/job4.sh
--'  5  95  ~/job3-4/processingeod/DWH_RATER_USAGE_WLN_EXTR_SUMMARY_20160318.txt
--'  1  0  /*.txt
--'  1  0  ~/job3-4/output/eod_results/validated.txt
--'  1  0  ~/job3-4/output/eod_results/missingfix.txt
--'  1  91  ~/job3-4/output/eod_results/missingfiles.txt
--'  57  0  ~/job4.sh
--'  1  0  ~/job3-4/output/eod_results/results.txt
--'  20  1  ~/job4.sh
--'  1  0  ~/home/job4.sh
--'  1  0  ~/home/job4.s
--'  129  0  ~/job3-4/output/eod_results/results.txt
--'  47  92  ~/job3-4/output/eod_results/results.txt
--'  2  91  ~/download/DWH_RATER_USAGE_WLN_EXTR_SUMMARY_20160318.txt
--'  1  0  ~/download/DWH_RATER_USAGE_WLN_EXTR_SUMMARY_20160318.txt
--'  1  0  ~/download/usage_wln_20160318_20180917160012.txt
--'  86  92  ~/job3-4/output/eod_results/results.txt
--'  27  33  ~/job4.sh
--'  31  30  ~/job4.sh
--'  14  0  ~/job4.sh
--'  30  10  ~/job4.sh
--'  54  7  ~/job4.sh
--'  37  0  ~/job3.sh_v1
--'  15  0  ~/job4.sh
--'  1  0  ~/job3.log
--'  47  0  ~/job4.sh
--'  11  0  ~/job4.sh
--'  29  51  ~/job3.sh
--'  31  0  ~/job3.sh
--'  30  27  ~/job3.sh
--'  8  0  ~/job3.sh
--'  21  0  ~/job3.log
--'  5  91  ~/download/DWH_RATER_USAGE_WLN_EXTR_SUMMARY_20160318.txt
--'  2  0  ~/download/usage_wln_20160318_20180917160012.txt
 
 # History of marks within files (newest to oldest):
 
+> ~/job1.sh
+	"	76	0
+	^	63	82
+	.	66	6
+	+	69	23
+	+	69	57
+	+	69	1
+	+	21	0
+	+	21	79
+	+	10	41
+	+	9	51
+	+	10	0
+	+	18	0
+	+	14	0
+	+	21	14
+	+	22	36
+	+	24	57
+	+	25	33
+	+	30	61
+	+	31	19
+	+	30	61
+	+	33	51
+	+	33	54
+	+	41	52
+	+	33	52
+	+	41	60
+	+	50	59
+	+	59	3
+	+	56	18
+	+	47	19
+	+	69	0
+	+	71	0
+	+	72	0
+	+	73	0
+	+	74	0
+	+	76	0
+	+	75	0
+	+	25	39
+	+	26	45
+	+	30	8
+	+	26	60
+	+	30	4
+	+	31	3
+	+	35	65
+	+	37	6
+	+	38	3
+	+	39	3
+	+	43	63
+	+	35	64
+	+	36	27
+	+	45	4
+	+	46	3
+	+	47	2
+	+	32	5
+	+	40	5
+	+	48	5
+	+	51	59
+	+	53	27
+	+	54	5
+	+	55	2
+	+	56	20
+	+	57	4
+	+	26	12
+	+	34	12
+	+	42	12
+	+	51	10
+	+	52	4
+	+	51	11
+	+	69	34
+	+	69	1
+	+	69	33
+	+	69	39
+	+	21	36
+	+	23	58
+	+	2	36
+	+	23	86
+	+	69	0
+	+	23	27
+	+	62	28
+	+	22	28
+	+	62	36
+	+	62	35
+	+	63	68
+	+	62	0
+	+	63	0
+	+	22	44
+	+	62	0
+	+	63	0
+	+	62	42
+	+	63	83
+	+	68	1
+	+	65	43
+	+	4	34
+	+	5	35
+	+	6	33
+	+	7	35
+	+	8	35
+	+	65	43
+	+	9	15
+	+	65	66
+	+	67	2
+	+	66	15
+	+	62	78
+	+	66	6
+
+> ~/.job1.sh.swp
+	"	1	0
+
+> ~/job1-2/tstamp/timestamps.txt
+	"	1	0
+
+> ~/job1.log
+	"	1	0
+
+> ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_2.ftr
+	"	3	292
+	.	3	292
+	+	1	309
+	+	2	309
+	+	3	292
+
+> ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_3.ftr
+	"	1	256
+	.	1	307
+	+	1	307
+
+> ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_4.ftr
+	"	1	63
+	^	3	294
+	.	3	286
+	+	4	0
+	+	1	297
+	+	4	297
+	+	4	0
+	+	3	581
+	+	2	293
+	+	3	293
+	+	1	286
+	+	2	286
+	+	3	286
+
 > ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_5.ftr
-	"	1	286
-	.	2	297
+	"	1	0
+	^	1	294
+	.	3	292
 	+	1	0
 	+	1	297
 	+	2	297
+	+	1	298
+	+	2	298
+	+	3	298
+	+	1	286
+	+	2	287
+	+	3	292
 
-> ~/job1.sh
-	"	17	35
-	^	17	36
-	.	17	34
-	+	1	11
-	+	8	8
-	+	2	40
-	+	8	34
-	+	22	0
-	+	8	37
-	+	22	32
-	+	22	54
-	+	22	13
-	+	3	38
-	+	22	3
-	+	8	37
-	+	9	53
-	+	10	34
-	+	12	3
-	+	22	0
-	+	9	28
-	+	10	5
-	+	7	46
-	+	20	0
-	+	7	60
-	+	20	4
-	+	5	44
-	+	20	0
-	+	19	44
-	+	18	39
-	+	17	34
-
-> ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_4.ftr
-	"	1	0
-	.	2	297
-	+	3	0
+> ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_6.ftr
+	"	1	297
+	.	1	297
+	+	2	0
 	+	1	297
-	+	2	297
+
+> ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_
+	"	1	0
+
+> ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr
+	"	1	0
+	.	1	336
+	+	1	336
 
 > ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_0.ftr
-	"	4	295
+	"	1	0
 	^	4	296
 	.	4	295
 	+	1	295
@@ -298,21 +420,6 @@
 
 > ~/.job3.sh.swp
 	"	1	0
-
-> ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_3.ftr
-	"	1	307
-	.	1	307
-	+	1	307
-
-> ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr
-	"	1	336
-	.	1	336
-	+	1	336
-
-> ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_2.ftr
-	"	1	303
-	.	1	303
-	+	1	303
 
 > ~/job1-2/success
 	"	1	0
