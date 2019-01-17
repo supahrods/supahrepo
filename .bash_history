@@ -1878,3 +1878,26 @@ ls
 rm job1.log 
 ls
 vi job1.sh 
+ls -a
+vi .job1.sh.swp 
+ls
+vi job1.sh 
+ls
+ls -a
+vi job1.sh 
+ps -ef | grep vi
+kill 19398
+ps -ef | grep vi
+ls -a
+rm .job1.sh.swp 
+vi job1.sh 
+ls
+git add .
+git add -A
+git add -A .
+git commit -m "jan 16 2019"
+git push
+exit
+ls
+sftp sftpuser@s-6c60176af9534bb6a.server.transfer.ap-southeast-1.amazonaws.com
+exit

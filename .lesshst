@@ -5,4 +5,5 @@
 "quiet
 "-q
 "-r
+"-q
 .shell
