@@ -23,5 +23,7 @@ for i in $(ls $CASE1_DIR/ | grep .*.ftr$); do  ## for every file in case1 dir
 				mv $CASE1_DIR/$i $SUCCESS_DIR;
 			fi;
 		fi;
+	elif [ $(stat -c %Y $CASE1_DIR/$i) -ge $(cat $TSTAMP_DIR/timestamps.txt | grep $i | cut -f3 -d" ") ]; then
+		sed -i '$1,1,1,$(tail -n1 $CASE1_DIR/$i | cut -f31 -d,)/1,1,0,$(tail -n1 $CASE1_DIR/$i | cut -f31 -d,)/' $CASE1_DIR/$i;
 	fi;
 done
