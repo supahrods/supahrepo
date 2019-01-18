@@ -20,7 +20,7 @@ LONG_CALL_DIR=/home/ubuntu/job1-2/long_calls
 
 ## Segregation and generate timestamp
 for i in $(ls $RECEIVE_DIR/ | grep .*.ftr$); do
-	echo "$i $(stat -c %Y $RECEIVE_DIR/$i) $(($(stat -c %Y $RECEIVE_DIR/$i)+604800))" >> $TSTAMP_DIR/timestamps.txt;
+	echo "$i $(stat -c %Y $RECEIVE_DIR/$i) $(($(stat -c %Y $RECEIVE_DIR/$i)+604800)) $(head -n1 $RECEIVE_DIR/$i | cut -f31 -d,)" >> $TSTAMP_DIR/timestamps.txt;
 	if [ $(head -n1 $RECEIVE_DIR/$i | cut -f28-30 -d,) == "0,2,1" ]; then
 		if [ $(cat $RECEIVE_DIR/$i | wc -l) == "1" ]; then
 			if grep -rq $(head -n1 $RECEIVE_DIR/$i | cut -f31 -d,) $CASE4_DIR; then

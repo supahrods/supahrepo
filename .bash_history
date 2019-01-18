@@ -1,13 +1,3 @@
-mkdir job3-r
-mkdir job3-4
-ls
-rm -r job3-r/
-cd job3-4/
-ls
-mkdir receiving
-mkdir processing
-mkdir -routput/dat
-mkdir -r output/dat
 mkdir -R output/dat
 man mkdir
 mkdir -p output/dat
@@ -1901,3 +1891,110 @@ exit
 ls
 sftp sftpuser@s-6c60176af9534bb6a.server.transfer.ap-southeast-1.amazonaws.com
 exit
+ls
+git add .
+git add --all .
+git commit -m "jan 17 2019"
+git push
+ls
+vi job1.sh 
+ls
+vi case1.sh 
+ls
+cd job1-2
+ls
+ls -R
+vi possible_success/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_5.ftr 
+man sed
+ls
+cd cases/case1/
+ls
+vi FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr 
+tail -n1 FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr 
+tail -n1 FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr | cut -f28-31 -d,
+tail -n1 FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr | cut -f28-31 -d, 
+tail -n1 FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr | cut -f28-31 -d, | sed -i s/1,1,1,716763662D2D32303138313030393130313533342D313030363034393737/1,1,0,716763662D2D32303138313030393130313533342D313030363034393737/g
+man sed
+man xargs
+tail -n1 FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr | cut -f28-31 -d, | xargs sed -i s/1,1,1,716763662D2D32303138313030393130313533342D313030363034393737/1,1,0,716763662D2D32303138313030393130313533342D313030363034393737/g
+tail -n1 FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr | cut -f28-31 -d, | xargs sed -i 's/1,1,1,716763662D2D32303138313030393130313533342D313030363034393737/1,1,0,716763662D2D32303138313030393130313533342D313030363034393737/g'
+tail -n1 FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr | cut -f28-31 -d, | xargs sed -i 's/"1,1,1,716763662D2D32303138313030393130313533342D313030363034393737"/"1,1,0,716763662D2D32303138313030393130313533342D313030363034393737"/g'
+tail -n1 FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr | cut -f28-31 -d,
+tail -n1 FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr | cut -f28-31 -d, | xargs -n 
+tail -n1 FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr | cut -f28-31 -d, | xargs sed -i s/0/1/g
+ls
+tac FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr 
+ls
+man awk
+l
+s
+cat FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr 
+sed -i '$s/1,1,1,716763662D2D32303138313030393130313533342D313030363034393737/1,1,0,716763662D2D32303138313030393130313533342D313030363034393737' FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr 
+sed -i '$s/1,1,1,716763662D2D32303138313030393130313533342D313030363034393737/1,1,0,716763662D2D32303138313030393130313533342D313030363034393737/' FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr 
+ls
+vi FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr 
+ls
+vi FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr 
+ls
+cd
+ls
+vi case1.sh 
+ls
+vi case1.sh
+ls -R job1-2
+rm job1-2/tstamp/timestamps.txt 
+./case1.sh 
+vi case1.sh 
+ls -R
+ls -R job1-2
+mv job1-2/cases/case*/* job1-2/receiving/
+mv job1-2/possible_success/* job1-2/receiving/
+ls -R job1-2
+vi job1.sh
+ls
+./job1.sh 
+ls -R job1-2
+ls
+cd job1-2/cases/case2/
+ls
+vi FILTER_WLNATS_AGF_16000040_000000478_20190108232204_2.ftr 
+ls
+vi FILTER_WLNATS_AGF_16000040_000000478_20190108232204_5.ftr 
+ls
+cd
+ls
+vi job1.log 
+ls
+vi job1.sh 
+ls
+ls -R job1-2
+mv job1-2/cases/case*/* job1-2/receiving/
+ls -R job1-2
+mv job1-2/possible_success/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_6.ftr job1-2/receiving/
+ls -R job1-2
+./job1.sh 
+ls -R job1-2
+ls
+vi job1.sh 
+vi job1.log 
+rm job1.log 
+mv job1-2/cases/case*/* job1-2/receiving/
+mv job1-2/possible_success/* job1-2/receiving/
+ls -R job1-2/
+rm job1-2/tstamp/timestamps.txt 
+ls
+./job1.sh 
+ls -R job1-2/
+vi job1.log 
+ls
+vi job1.sh 
+git add 
+git add .
+git add --all . 
+git commit -m "jan 17 2019 19:47"
+git push
+ls
+exit
+cd job1-2/cases/case2
+ls
+vi FILTER_WLNATS_AGF_16000040_000000478_20190108232204_2.ftr 
