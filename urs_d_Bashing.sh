@@ -21,13 +21,15 @@ DAT_DIR=/MYBSS/EP_FILES/USAGE_WLN/DAT
 FIN_DIR=/MYBSS/EP_FILES/USAGE_WLN/FIN
 USAGE_DIR=/MYBSS/EP_FILES/BACKUP/USAGE_WLN
 TSTAMP_DIR=/home/urpadm/job3-4/tstamp
-F_LIFETIME=604800 VALIDATED_FILES=$((0))
-MISSING_FIX=$((0)) MISSING_FILES=$((0))
+F_LIFETIME=604800
+VALIDATED_FILES=$((0))
+MISSING_FIX=$((0))
+MISSING_FILES=$((0))
 
 ## Check if uploading then move from receiving to processing
 for i in $(ls $RECEIVE_DIR | grep .*"\.txt"$); do
         if ! lsof | grep $RECEIVE_DIR/$i; then
-                echo "$(stat -c %Y $RECEIVE_DIR/$i) $(($(stat -c %Y $RECEIVE_DIR/$i)+$F_LIFETIME)) $i" >> $TSTAMP_DIR/timestamp4.txt;
+                echo "$(stat -c %Y $RECEIVE_DIR/$i) $(($(stat -c %Y $RECEIVE_DIR/$i)+$F_LIFETIME)) $i" >> $TSTAMP_DIR/urs_d_BashingTimestamps.txt;
 ## record filename, timestamp today, timestamp 7 days after
                 mv $RECEIVE_DIR/$i $PROCESS_DIR;
         fi; done
@@ -63,4 +65,4 @@ echo -e "\n------------------------- Endof Summary Report ----------------------
 ## Move file output report to wlg usage dir
 mv $PROCESS_DIR/*.txt $USAGE_DIR 2> /dev/null;
 mv $OUTPUT_DIR/$DATE_FILENAME $USAGE_DIR 2> /dev/null;
-echo "$(stat -c %Y $USAGE_DIR/$DATE_FILENAME) $(($(stat -c %Y $USAGE_DIR/$DATE_FILENAME)+$F_LIFETIME)) $USAGE_DIR/$DATE_FILENAME" >> $TSTAMP_DIR/timestamp4.txt; ## record filename, timestamp today, timestamp 7 days after
+echo "$(stat -c %Y $USAGE_DIR/$DATE_FILENAME) $(($(stat -c %Y $USAGE_DIR/$DATE_FILENAME)+$F_LIFETIME)) $USAGE_DIR/$DATE_FILENAME" >> $TSTAMP_DIR/urs_d_BashingTimestamps.txt; ## record filename, timestamp today, timestamp 7 days after

@@ -13,21 +13,21 @@
 #----------------------------------------------------------
 
 # !/bin/bash
-RECEIVE_DIR=/home/urpadm/job3-4/receiving
-PROCESS_DIR=/home/urpadm/job3-4/processing
-OUTPUT_DIR=/home/urpadm/job3-4/output
+RECEIVE_DIR=/MYBSS/RECEIVING
+PROCESS_DIR=/MYBSS/PROCESSING
+OUTPUT_DIR=/MYBSS/OUTPUT
 DAT_DIR=/MYBSS/EP_FILES/USAGE_WLN/DAT
 FIN_DIR=/MYBSS/EP_FILES/USAGE_WLN/FIN
 USAGE_DIR=/MYBSS/EP_FILES/BACKUP/USAGE_WLN
 LOG_DIR=/tmp/urs_logs
-TSTAMP_DIR=/home/urpadm/job3-4/tstamp
+TSTAMP_DIR=/MYBSS/TSTAMP
 F_LIFETIME=604800
 
 ## workflow: receive all files at RECEIVE_DIR then move them to PROCESS_DIR after processing, move files to OUTPUT_DIR Check if
 ## uploading then move from receiving to processing
 for i in $(ls $RECEIVE_DIR | grep .*"\.dat".*$); do     ## check every .dat file
         if ! lsof | grep $RECEIVE_DIR/$i; then ## check if file is still uploading
-                echo "$(stat -c %Y $RECEIVE_DIR/$i) $(($(stat -c %Y $RECEIVE_DIR/$i)+$F_LIFETIME)) $i" >> $TSTAMP_DIR/timestamp3.txt;
+                echo "$(stat -c %Y $RECEIVE_DIR/$i) $(($(stat -c %Y $RECEIVE_DIR/$i)+$F_LIFETIME)) $i" >> $TSTAMP_DIR/urs_d_TransferFinAndDatTimestamps.txt;
 ## record filename, timestamp today, timestamp 7 days after
                 mv $RECEIVE_DIR/$i $PROCESS_DIR;        ## move to process dir if file finished upload
         fi; done
