@@ -29,7 +29,6 @@ for i in $(ls $RECEIVE_DIR | grep .*"\.dat".*$); do     ## check every .dat file
         if ! lsof | grep $RECEIVE_DIR/$i; then ## check if file is still uploading
                 echo "$(stat -c %Y $RECEIVE_DIR/$i) $(($(stat -c %Y $RECEIVE_DIR/$i)+$F_LIFETIME)) $i" >> $TSTAMP_DIR/urs_d_TransferFinAndDatTimestamps.txt;
 ## record filename, timestamp today, timestamp 7 days after
-                mv $RECEIVE_DIR/$i $PROCESS_DIR;        ## move to process dir if file finished upload
         fi; done
 ## Process files then move to output directory
 for i in $(ls $PROCESS_DIR | grep .*"\.dat"$); do       ## check every .dat file in process dir
