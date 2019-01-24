@@ -20,7 +20,7 @@ DAT_DIR=/MYBSS/EP_FILES/USAGE_WLN/DAT
 FIN_DIR=/MYBSS/EP_FILES/USAGE_WLN/FIN
 USAGE_DIR=/MYBSS/EP_FILES/BACKUP/USAGE_WLN
 LOG_DIR=/tmp/urs_logs
-TSTAMP_DIR=/MYBSS/TSTAMP
+TSTAMP_DIR=/home/urpadm/URS/TSTAMP
 F_LIFETIME=604800
 
 ## workflow: receive all files at RECEIVE_DIR then move them to PROCESS_DIR after processing, move files to OUTPUT_DIR Check if
