@@ -14,13 +14,13 @@
 
 #!/bin/bash
 DATE_FILENAME=urs_d_Bashing_$(date +'%Y%m%d')_results.log
-RECEIVE_DIR=/home/urpadm/job3-4/receiving
-PROCESS_DIR=/home/urpadm/job3-4/processingeod
-OUTPUT_DIR=/home/urpadm/job3-4/output/eod_results
+RECEIVE_DIR=/home/urpadm/URS/RECEIVING
+PROCESS_DIR=/home/urpadm/URS/PROCESSING
+OUTPUT_DIR=/home/urpadm/URS/output/EOD_RESULTS
 DAT_DIR=/MYBSS/EP_FILES/USAGE_WLN/DAT
 FIN_DIR=/MYBSS/EP_FILES/USAGE_WLN/FIN
 USAGE_DIR=/MYBSS/EP_FILES/BACKUP/USAGE_WLN
-TSTAMP_DIR=/home/urpadm/job3-4/tstamp
+TSTAMP_DIR=/home/urpadm/URS/TSTAMPS
 F_LIFETIME=604800
 VALIDATED_FILES=$((0))
 MISSING_FIX=$((0))
