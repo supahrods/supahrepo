@@ -29,7 +29,7 @@ MISSING_FILES=$((0))
 ## Check if uploading then move from receiving to processing
 for i in $(ls $RECEIVE_DIR | grep .*"\.txt"$); do
         if ! lsof | grep $RECEIVE_DIR/$i; then
-                echo "$(stat -c %Y $RECEIVE_DIR/$i) $(($(stat -c %Y $RECEIVE_DIR/$i)+$F_LIFETIME)) $i" >> $TSTAMP_DIR/urs_d_BashingTimestamps.txt;
+                echo "$(stat -c %Y $RECEIVE_DIR/$i) $(($(stat -c %Y $RECEIVE_DIR/$i)+$F_LIFETIME)) $i" >> $TSTAMP_DIR/urs_d_TransferFinAndDatTimestamps.txt;
 ## record filename, timestamp today, timestamp 7 days after
                 mv $RECEIVE_DIR/$i $PROCESS_DIR;
         fi; done
@@ -48,6 +48,10 @@ for i in $(cat $PROCESS_DIR/*.txt 2> /dev/null | grep .*\.dat); do
                 LIST_MISSING="$LIST_MISSING $i";
         fi; done
 
+if [! -f $OUTPUT_DIR/$DATE_FILENAME]; then
+  touch $OUTPUT_DIR/$DATE_FILENAME
+fi
+
 ## Output to results file
 echo -e "------------------------- Detailed Summary Report ----------------------------------------------------------------" >> $OUTPUT_DIR/$DATE_FILENAME;
 echo -e "Date of Report Generation: $(date)" >> $OUTPUT_DIR/$DATE_FILENAME;
@@ -65,4 +69,4 @@ echo -e "\n------------------------- Endof Summary Report ----------------------
 ## Move file output report to wlg usage dir
 mv $PROCESS_DIR/*.txt $USAGE_DIR 2> /dev/null;
 mv $OUTPUT_DIR/$DATE_FILENAME $USAGE_DIR 2> /dev/null;
-echo "$(stat -c %Y $USAGE_DIR/$DATE_FILENAME) $(($(stat -c %Y $USAGE_DIR/$DATE_FILENAME)+$F_LIFETIME)) $USAGE_DIR/$DATE_FILENAME" >> $TSTAMP_DIR/urs_d_BashingTimestamps.txt; ## record filename, timestamp today, timestamp 7 days after
+echo "$(stat -c %Y $USAGE_DIR/$DATE_FILENAME) $(($(stat -c %Y $USAGE_DIR/$DATE_FILENAME)+$F_LIFETIME)) $USAGE_DIR/$DATE_FILENAME" >> $TSTAMP_DIR/urs_d_TransferFinAndDatTimestamps.txt; ## record filename, timestamp today, timestamp 7 days after
