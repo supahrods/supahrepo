@@ -48,10 +48,6 @@ for i in $(cat $PROCESS_DIR/*.txt 2> /dev/null | grep .*\.dat); do
                 LIST_MISSING="$LIST_MISSING $i";
         fi; done
 
-if [! -f $OUTPUT_DIR/$DATE_FILENAME]; then
-  touch $OUTPUT_DIR/$DATE_FILENAME
-fi
-
 ## Output to results file
 echo -e "------------------------- Detailed Summary Report ----------------------------------------------------------------" >> $OUTPUT_DIR/$DATE_FILENAME;
 echo -e "Date of Report Generation: $(date)" >> $OUTPUT_DIR/$DATE_FILENAME;
