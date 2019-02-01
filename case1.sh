@@ -13,7 +13,7 @@ LONG_CALL_DIR=/home/ubuntu/job1-2/long_calls
 
 ##PROCESS CASE1
 for i in $(ls $CASE1_DIR/ | grep .*.ftr$); do  ## for every file in case1 dir
-	#touch -m $CASE1_DIR/$i;
+	touch -m $CASE1_DIR/$i;
 	if [ $(stat -c %Y $CASE1_DIR/$i) -lt $(cat $TSTAMP_DIR/timestamps.txt | grep $i | cut -f3 -d" ") ]; then
 		## Check for success
 		if grep -qr $(head -n1 $CASE1_DIR/$i | cut -f31 -d,) $POSSIBLE_SUCCESS; then

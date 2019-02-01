@@ -8,7 +8,7 @@
 # hlsearch on (H) or off (h):
 ~h
 # Last Search Pattern:
-~MSle0~/timestamp
+~MSle0~/718963662D2D32313138313030393130313533342D313030363034393737
 
 # Last Substitute String:
 $
@@ -16,15 +16,17 @@ $
 # Command Line History (newest to oldest):
 :q
 :wq
-:w
-:set nu
 :q!
+:set nu
+:set nonu
+:w
 :wqq
 :wq!
-:set nonu
 :set no nu
 
 # Search String History (newest to oldest):
+?/718963662D2D32313138313030393130313533342D313030363034393737
+?/CASE1
 ?/timestamp
 ?/stat
 ?/716763662D2D32303138313030393130313533342D413030363034393737
@@ -45,67 +47,117 @@ $
 # Registers:
 "0	CHAR	0
 	\
-""1	LINE	0
-					mv $CASE1_DIR/$i $SUCCESS_DIR;
+"1	LINE	0
+				echo $a
 "2	LINE	0
-			mv $CASE1_DIR/$i $SUCCESS_DIR;
+			echo rods;
 "3	LINE	0
-	599
-<WLNGTS_ATS_GTS_20181009104631_00010101.dat,9350,,,,,false,69,,INVITE,0,hc5gtsats01.vims.globe.com.ph,o0c2h5yy2z92j4zjy3j3ojx4z91c5295@UAC,tel:+63423223228,tel:09156107805,1810091015342B0800,1810091015412B0800,,1810091015412B0800,1810091045412B0800,null,vims.globe.com.ph,,128774515,1,3,1,0,2,1,716763662D2D32303138313030393130313533342D413030363034393737,null,,,null,m=audio 12176 RTP/AVP 8 97  ,a=rtpmap:8 PCMA/8000  a=rtpmap:97 telephone-event/8000  a=ptime:30  a=fmtp:97 0-15  ,,,,,1800,,,tel:09156107805,null,,,,2,null,,,,0,4,TEL_URI,2,0,,-1,0,0,0,0,null,0,null,,,,,,,,,0,,0,,tel:+63423223228
+			echo rods
 "4	LINE	0
-	
+			echo rods;
 "5	LINE	0
-					#mv $CASE1_DIR/$i $SUCCESS_DIR;
+					echo rods
 "6	LINE	0
-						echo $a;
+				echo rods2
 "7	LINE	0
-						echo $i;
+			echo rods
 "8	LINE	0
-					echo rods3;
+	599
+<WLNGTS_ATS_GTS_20181009104631_00010101.dat,9350,,,,,false,69,,INVITE,0,hc5gtsats01.vims.globe.com.ph,o0c2h5yy2z92j4zjy3j3ojx4z91c5295@UAC,tel:+63423223228,tel:09156107805,1810091015342B0800,1810091015412B0800,,1810091015412B0800,1810091045412B0800,null,vims.globe.com.ph,,128774515,1,3,4,1,1,1,716763662D2D32313138313030393130313533342D313030363034393737,null,,,null,m=audio 12176 RTP/AVP 8 97  ,a=rtpmap:8 PCMA/8000  a=rtpmap:97 telephone-event/8000  a=ptime:30  a=fmtp:97 0-15  ,,,,,1800,,,tel:09156107805,null,,,,2,null,,,,0,4,TEL_URI,2,0,,-1,0,0,0,0,null,0,null,,,,,,,,,0,,0,,tel:+63423223228
 "9	LINE	0
-			echo $i;
+	599
+<WLNGTS_ATS_GTS_20181009104631_00010101.dat,9350,,,,,false,69,,INVITE,0,hc5gtsats01.vims.globe.com.ph,o0c2h5yy2z92j4zjy3j3ojx4z91c5295@UAC,tel:+63423223228,tel:09156107805,1810091015342B0800,1810091015412B0800,,1810091015412B0800,1810091045412B0800,null,vims.globe.com.ph,,128774515,1,3,5,1,1,0,716763662D2D32313138313030393130313533342D313030363034393737,null,,,null,m=audio 12176 RTP/AVP 8 97  ,a=rtpmap:8 PCMA/8000  a=rtpmap:97 telephone-event/8000  a=ptime:30  a=fmtp:97 0-15  ,,,,,1800,,,tel:09156107805,null,,,,2,null,,,,0,4,TEL_URI,2,0,,-1,0,0,0,0,null,0,null,,,,,,,,,0,,0,,tel:+63423223228
 "w	CHAR	0
 	[lk
-"-	CHAR	0
-	 
+""-	CHAR	0
+		
 
 # File marks:
-'0  1  0  ~/case2.sh
+'0  3  294  ~/job1-2/success/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_10.ftr
 '1  1  0  ~/job1-2/success/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_7.ftr
-'2  3  88  ~/job1-2/cases/case1/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_7.ftr
-'3  26  0  ~/case1.sh
-'4  59  2  ~/job1.sh
-'5  1  0  ~/job1-2/tstamp/timestamps.txt
-'6  1  0  ~/job1-2/tstamp/sedBohwVk
-'7  3  292  ~/job1-2/success/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_7.ftr
-'8  24  4  ~/case1.sh
-'9  1  0  ~/case1.sh
+'2  3  292  ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_7.ftr
+'3  3  286  ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_10.ftr
+'4  16  0  ~/case2.sh
+'5  3  136  ~/job1-2/cases/case2/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_10.ftr
+'6  36  0  ~/case2.sh
+'7  1  290  ~/job1-2/cases/case2/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_10.ftr
+'8  31  9  ~/case2.sh
+'9  28  0  ~/case1.sh
 
 # Jumplist (newest first):
--'  1  0  ~/case2.sh
+-'  3  294  ~/job1-2/success/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_10.ftr
+-'  2  294  ~/job1-2/success/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_10.ftr
+-'  1  294  ~/job1-2/success/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_10.ftr
 -'  1  0  ~/job1-2/success/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_7.ftr
+-'  3  292  ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_7.ftr
+-'  1  0  ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_7.ftr
+-'  3  286  ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_10.ftr
+-'  1  0  ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_10.ftr
+-'  16  0  ~/case2.sh
+-'  1  0  ~/case2.sh
+-'  3  136  ~/job1-2/cases/case2/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_10.ftr
+-'  1  0  ~/job1-2/cases/case2/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_10.ftr
+-'  36  0  ~/case2.sh
+-'  31  9  ~/case2.sh
+-'  28  0  ~/case1.sh
+-'  1  0  ~/case1.sh
+-'  1  0  ~/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_10.ftr
+-'  1  0  ~/job1-2/cases/case2/sedjbVQAi
+-'  30  38  ~/case2.sh
+-'  1  0  ~/case.2
+-'  1  0  ~/job1-2/tstamp/timestamps.txt
+-'  21  1  ~/case2.sh
+-'  1  0  ~/job1.log
+-'  17  97  ~/case1.sh
+-'  23  2  ~/case1.sh
+-'  24  0  ~/case2.sh
+-'  29  12  ~/case2.sh
+-'  2  128  ~/job1-2/cases/case2/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_10.ftr
+-'  32  5  ~/case2.sh
+-'  20  0  ~/case2.sh
+-'  18  2  ~/case2.sh
+-'  3  0  ~/job1-2/success/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_7.ftr
+-'  30  40  ~/job1.sh
+-'  1  0  ~/job1.sh
+-'  25  46  ~/job1.sh
+-'  11  0  ~/job1.sh
+-'  1  0  ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_9.ftr
+-'  40  1  ~/job1.sh
+-'  16  0  ~/job1.sh
+-'  48  0  ~/job1.sh
+-'  1  0  ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr
+-'  52  0  ~/job1.sh
+-'  10  0  ~/job1.log
+-'  1  290  ~/job1-2/possible_success/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_9.ftr
+-'  1  0  ~/job1-2/possible_success/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_8.ftr
+-'  1  0  ~/job1-2/possible_success/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_
+-'  19  21  ~/case2.sh
+-'  1  0  ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_8.ftr
+-'  2  0  ~/job1.log
+-'  28  1  ~/case2.sh
+-'  17  98  ~/case2.sh
+-'  5  0  ~/case2.sh
+-'  14  14  ~/case2.sh
+-'  1  48  ~/job1-2/cases/case2/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_2.ftr
+-'  34  10  ~/case2.sh
+-'  13  0  ~/case1.sh
+-'  15  0  ~/case1.sh
+-'  16  1  ~/case1.sh
 -'  3  88  ~/job1-2/cases/case1/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_7.ftr
 -'  1  0  ~/job1-2/cases/case1/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_7.ftr
 -'  26  0  ~/case1.sh
--'  1  0  ~/case1.sh
--'  59  2  ~/job1.sh
--'  1  0  ~/job1.sh
--'  1  0  ~/job1-2/tstamp/timestamps.txt
+-'  62  2  ~/job1.sh
 -'  1  0  ~/job1-2/tstamp/sedBohwVk
--'  3  292  ~/job1-2/success/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_7.ftr
 -'  24  4  ~/case1.sh
--'  1  0  ~/job1.log
 -'  30  1  ~/case1.sh
 -'  23  118  ~/job1.sh
--'  84  0  ~/job1.sh
--'  1  0  ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_7.ftr
+-'  87  0  ~/job1.sh
 -'  3  292  ~/job1-2/cases/case3/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_7.ftr
 -'  1  0  ~/job1-2/cases/case3/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_7.ftr
--'  92  37  ~/job1.sh
--'  86  57  ~/job1.sh
+-'  95  37  ~/job1.sh
+-'  89  57  ~/job1.sh
 -'  21  28  ~/job1.sh
--'  54  0  ~/job1.sh
--'  17  60  ~/case1.sh
+-'  57  0  ~/job1.sh
 -'  29  0  ~/case1.sh
 -'  1  0  ~/cas1
 -'  1  0  ~/case
@@ -114,100 +166,115 @@ $
 -'  14  3  ~/job1-2/tstamp/timestamps.txt
 -'  22  11  ~/case2.sh
 -'  15  6  ~/case2.sh
--'  16  23  ~/case1.sh
--'  28  106  ~/case1.sh
 -'  2  0  ~/job1-2/cases/case1/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_7.ftr
 -'  1  0  ~/job1-2/cases/case1/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_7.ftre
 -'  1  0  ~/job1-2/cases/case1
 -'  2  0  ~/case1.sh
 -'  2  292  ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_9.ftr
--'  1  0  ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_9.ftr
 -'  2  102  ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_8.ftr
--'  1  0  ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_8.ftr
 -'  7  46  ~/job1-2/tstamp/timestamps.txt
--'  3  336  ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_7.ftr
 -'  33  0  ~/case1.sh
 -'  28  0  ~/job1.sh
 -'  3  0  ~/job1.log
--'  53  2  ~/job1.sh
--'  1  0  ~/job1-2/cases/case2/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_2.ftr
--'  5  0  ~/job1.log
--'  1  0  ~/job1-2/cases/case2/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_5.ftr
--'  60  0  ~/job1.sh
--'  3  292  ~/job1-2/cases/case1/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr
--'  1  0  ~/job1-2/cases/case1/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr
--'  1  147  ~/job1-2/possible_success/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_5.ftr
--'  27  2  ~/case1.sh
--'  64  0  ~/job1.sh
--'  22  22  ~/case1.sh
--'  21  2  ~/case1.sh
--'  23  12  ~/case1.sh
--'  20  12  ~/case1.sh
--'  18  9  ~/case1.sh
--'  1  0  ~/job1-2
--'  19  71  ~/case1.sh
--'  74  0  ~/job1.sh
--'  1  0  ~/job1-2/possible_success/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_6.ftr
--'  1  0  ~/job1-2/possible_success/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_
--'  2  292  ~/job1-2/possible_success/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_6.ftr
--'  2  286  ~/job1-2/possible_success/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr
--'  1  0  ~/job1-2/possible_success/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr
--'  66  36  ~/job1.sh
--'  19  0  ~/job1-2/tstamp/timestamps.txt
--'  63  20  ~/job1.sh
--'  56  19  ~/job1.sh
--'  55  14  ~/job1.sh
--'  52  14  ~/job1.sh
--'  51  38  ~/job1.sh
--'  50  32  ~/job1.sh
--'  47  20  ~/job1.sh
--'  46  15  ~/job1.sh
--'  44  20  ~/job1.sh
--'  43  15  ~/job1.sh
--'  42  39  ~/job1.sh
--'  41  33  ~/job1.sh
--'  39  20  ~/job1.sh
--'  38  15  ~/job1.sh
--'  36  20  ~/job1.sh
--'  35  15  ~/job1.sh
--'  34  39  ~/job1.sh
--'  33  33  ~/job1.sh
--'  31  20  ~/job1.sh
--'  30  15  ~/job1.sh
--'  27  15  ~/job1.sh
--'  26  39  ~/job1.sh
--'  25  26  ~/job1.sh
--'  24  30  ~/job1.sh
--'  3  88  ~/job1-2/cases/case1/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_7.ftr
 
 # History of marks within files (newest to oldest):
 
-> ~/case2.sh
-	"	1	0
-	^	16	23
-	.	17	79
-	+	15	19
-	+	16	22
-	+	17	79
-	+	25	14
-	+	16	22
-	+	17	79
+> ~/job1-2/success/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_10.ftr
+	"	3	294
+	.	1	290
+	+	1	290
+	+	2	290
+	+	1	290
 
 > ~/job1-2/success/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_7.ftr
 	"	1	0
 	.	3	292
 	+	3	292
 
-> ~/job1-2/cases/case1/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_7.ftr
-	"	3	88
+> ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_7.ftr
+	"	3	292
 	.	3	292
-	+	2	292
+	+	1	336
+	+	2	336
 	+	3	292
 
+> ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_10.ftr
+	"	3	286
+	.	3	286
+	+	1	290
+	+	2	286
+	+	3	286
+
+> ~/case2.sh
+	"	16	0
+	^	16	1
+	.	16	1
+	+	15	19
+	+	16	22
+	+	17	79
+	+	25	14
+	+	16	22
+	+	17	79
+	+	15	19
+	+	17	24
+	+	19	30
+	+	20	104
+	+	21	39
+	+	24	29
+	+	25	12
+	+	29	10
+	+	28	26
+	+	29	113
+	+	33	27
+	+	34	10
+	+	29	81
+	+	16	16
+	+	14	14
+	+	18	10
+	+	20	12
+	+	18	0
+	+	20	0
+	+	21	0
+	+	16	1
+	+	18	0
+	+	29	11
+	+	30	43
+	+	31	111
+	+	32	5
+	+	29	11
+	+	31	13
+	+	31	97
+	+	31	56
+	+	30	2
+	+	31	2
+	+	32	2
+	+	33	2
+	+	34	2
+	+	16	1
+	+	30	2
+	+	31	2
+	+	32	2
+	+	30	39
+	+	31	94
+	+	29	0
+	+	31	9
+	+	33	2
+	+	34	2
+	+	31	2
+	+	16	1
+
+> ~/job1-2/cases/case2/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_10.ftr
+	"	3	136
+	.	1	290
+	+	1	297
+	+	2	296
+	+	3	297
+	+	1	290
+
 > ~/case1.sh
-	"	26	0
-	^	31	32
-	.	24	0
+	"	28	0
+	^	27	5
+	.	17	0
 	+	14	0
 	+	34	0
 	+	20	130
@@ -265,111 +332,14 @@ $
 	+	31	2
 	+	30	0
 	+	24	0
+	+	16	1
+	+	17	0
 
-> ~/job1.sh
-	"	59	2
-	^	92	38
-	.	23	118
-	+	7	35
-	+	8	35
-	+	90	43
-	+	9	15
-	+	90	66
-	+	92	2
-	+	91	15
-	+	87	78
-	+	91	16
-	+	88	69
-	+	91	17
-	+	23	7
-	+	85	20
-	+	85	29
-	+	85	92
-	+	85	14
-	+	85	8
-	+	22	44
-	+	23	9
-	+	85	0
-	+	87	0
-	+	88	0
-	+	99	0
-	+	89	0
-	+	90	0
-	+	91	0
-	+	99	1
-	+	93	0
-	+	22	41
-	+	23	68
-	+	24	29
-	+	26	38
-	+	28	19
-	+	31	19
-	+	33	20
-	+	34	26
-	+	36	7
-	+	39	7
-	+	41	20
-	+	42	26
-	+	44	7
-	+	47	7
-	+	50	19
-	+	57	25
-	+	59	6
-	+	65	6
-	+	25	13
-	+	87	0
-	+	88	0
-	+	89	0
-	+	90	0
-	+	91	0
-	+	87	45
-	+	87	46
-	+	88	29
-	+	90	35
-	+	91	36
-	+	87	0
-	+	88	0
-	+	89	0
-	+	90	0
-	+	91	0
-	+	67	0
-	+	82	15
-	+	51	73
-	+	53	40
-	+	54	6
-	+	52	48
-	+	54	75
-	+	56	3
-	+	55	48
-	+	57	64
-	+	58	48
-	+	61	3
-	+	60	64
-	+	61	63
-	+	62	3
-	+	67	1
-	+	81	0
-	+	67	72
-	+	80	19
-	+	68	1
-	+	69	2
-	+	70	2
-	+	71	1
-	+	72	2
-	+	73	2
-	+	74	2
-	+	75	2
-	+	76	2
-	+	77	1
-	+	78	2
-	+	79	2
-	+	80	1
-	+	80	2
-	+	80	2
-	+	81	0
-	+	80	0
-	+	80	0
-	+	23	118
+> ~/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_10.ftr
+	"	1	0
+
+> ~/case.2
+	"	1	0
 
 > ~/job1-2/tstamp/timestamps.txt
 	"	1	0
@@ -382,12 +352,151 @@ $
 > ~/job1.log
 	"	1	0
 
-> ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_7.ftr
+> ~/job1.sh
+	"	30	40
+	^	30	41
+	.	31	7
+	+	93	66
+	+	95	2
+	+	94	15
+	+	90	78
+	+	94	16
+	+	91	69
+	+	94	17
+	+	23	7
+	+	88	20
+	+	88	29
+	+	88	92
+	+	88	14
+	+	88	8
+	+	22	44
+	+	23	9
+	+	88	0
+	+	90	0
+	+	91	0
+	+	102	0
+	+	92	0
+	+	93	0
+	+	94	0
+	+	102	1
+	+	96	0
+	+	22	41
+	+	23	68
+	+	24	29
+	+	26	38
+	+	28	19
+	+	34	19
+	+	36	20
+	+	37	26
+	+	39	7
+	+	42	7
+	+	44	20
+	+	45	26
+	+	47	7
+	+	50	7
+	+	53	19
+	+	60	25
+	+	62	6
+	+	68	6
+	+	25	13
+	+	90	0
+	+	91	0
+	+	92	0
+	+	93	0
+	+	94	0
+	+	90	45
+	+	90	46
+	+	91	29
+	+	93	35
+	+	94	36
+	+	90	0
+	+	91	0
+	+	92	0
+	+	93	0
+	+	94	0
+	+	70	0
+	+	85	15
+	+	54	73
+	+	56	40
+	+	57	6
+	+	55	48
+	+	57	75
+	+	59	3
+	+	58	48
+	+	60	64
+	+	61	48
+	+	64	3
+	+	63	64
+	+	64	63
+	+	65	3
+	+	70	1
+	+	84	0
+	+	70	72
+	+	83	19
+	+	71	1
+	+	72	2
+	+	73	2
+	+	74	1
+	+	75	2
+	+	76	2
+	+	77	2
+	+	78	2
+	+	79	2
+	+	80	1
+	+	81	2
+	+	82	2
+	+	83	1
+	+	83	2
+	+	83	2
+	+	84	0
+	+	83	0
+	+	83	0
+	+	23	118
+	+	25	46
+	+	29	76
+	+	30	63
+	+	31	7
+
+> ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_9.ftr
 	"	1	0
-	.	3	336
+	.	2	292
+	+	2	292
+
+> ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr
+	"	1	0
+	.	1	336
 	+	1	336
-	+	2	336
-	+	3	336
+
+> ~/job1-2/possible_success/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_9.ftr
+	"	1	290
+	.	1	290
+	+	1	290
+
+> ~/job1-2/possible_success/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_8.ftr
+	"	1	0
+	.	1	286
+	+	2	286
+	+	2	286
+	+	1	286
+	+	2	0
+	+	1	286
+
+> ~/job1-2/possible_success/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_
+	"	1	0
+
+> ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_8.ftr
+	"	1	0
+	.	1	0
+	+	1	0
+
+> ~/job1-2/cases/case2/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_2.ftr
+	"	1	48
+
+> ~/job1-2/cases/case1/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_7.ftr
+	"	3	88
+	.	3	292
+	+	2	292
+	+	3	292
 
 > ~/job1-2/cases/case3/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_7.ftr
 	"	3	292
@@ -406,19 +515,6 @@ $
 > ~/job1-2/cases/case1/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_7.ftre
 	"	1	0
 
-> ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_9.ftr
-	"	2	292
-	.	2	292
-	+	2	292
-
-> ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_8.ftr
-	"	2	102
-	.	1	0
-	+	1	0
-
-> ~/job1-2/cases/case2/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_2.ftr
-	"	1	0
-
 > ~/job1-2/cases/case2/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_5.ftr
 	"	1	0
 
@@ -435,9 +531,6 @@ $
 	.	2	292
 	+	1	286
 	+	2	292
-
-> ~/job1-2/possible_success/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_
-	"	1	0
 
 > ~/job1-2/possible_success/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr
 	"	2	286
@@ -498,11 +591,6 @@ $
 
 > ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_
 	"	1	0
-
-> ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_1.ftr
-	"	1	0
-	.	1	336
-	+	1	336
 
 > ~/job1-2/receiving/FILTER_WLNATS_AGF_16000040_000000478_20190108232204_0.ftr
 	"	1	0

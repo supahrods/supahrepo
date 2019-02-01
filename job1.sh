@@ -26,6 +26,9 @@ for i in $(ls $RECEIVE_DIR/ | grep .*.ftr$); do
 			if grep -rq $(head -n1 $RECEIVE_DIR/$i | cut -f31 -d,) $CASE4_DIR; then
 				echo "file $i is a possible success for case4" >> job1.log;
 				mv $RECEIVE_DIR/$i $POSSIBLE_SUCCESS;
+			elif grep -rq $(head -n1 $RECEIVE_DIR/$i | cut -f31 -d,) $CASE2_DIR; then
+				echo "file $i is a possible success for case2" >> job1.log;
+				mv $RECEIVE_DIR/$i $POSSIBLE_SUCCESS;
 			else
 				echo "file $i is case 4 (single scenario)" >> job1.log;
 				mv $RECEIVE_DIR/$i $CASE4_DIR;
