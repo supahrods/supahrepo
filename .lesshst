@@ -1,6 +1,20 @@
 .less-history-file:
 .search
+<<<<<<< HEAD
 "exact
 "-w
 "-s
+=======
+"recursiveq
+"-e
+"quiet
+"-q
+"-r
+"-q
+"-i
+"-F
+"-e
+"-i
+"-n
+>>>>>>> 47aa02e243411d4e1f299f38a183e217f2fe6f60
 .shell

@@ -20,3 +20,8 @@ fi
 if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
+<<<<<<< HEAD
+=======
+
+PATH=$PATH:$HOME/.local/bin
+>>>>>>> 47aa02e243411d4e1f299f38a183e217f2fe6f60
